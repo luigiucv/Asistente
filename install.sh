@@ -47,8 +47,8 @@ npm i fb-video-downloader
 
 echo -e '\e[1;32m
 Descarga Completada al 100%
-Creador: Luis Rojas
-Numero: +51 980 746 754
+Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬
+Numero:  +51 932 069 772
 
 Escribe node thechoute para iniciar el bot
 En caso que el bot presente algun problema, comunicate con el creador su numero esta mas arriba
