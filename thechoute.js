@@ -263,7 +263,7 @@ key : {
                     },
    message: {
                 liveLocationMessage: {
-                caption: `🔥🔥𝕿𝖍ٌ𝖊  𝕮𝖍𝖔𝖚𝖙𝖊🔥🔥`,
+                caption: `🔥🔥Eva🔥🔥`,
                 jpegThumbnail: fs.readFileSync('./media/imagen/youtube-mi.jpg'),
                       }
                     }
@@ -360,12 +360,12 @@ isCharge: "" || false
     });
 }
 
- // function _0x28c3(_0x2f8ce0,_0x4765c9){const _0x161f25=_0x161f();return _0x28c3=function(_0x28c3fe,_0x2851fb){_0x28c3fe=_0x28c3fe-0x1f2;let _0x8b0f4b=_0x161f25[_0x28c3fe];return _0x8b0f4b;},_0x28c3(_0x2f8ce0,_0x4765c9);}(function(_0x544189,_0x34261f){const _0x5057ca=_0x28c3,_0x54a56b=_0x544189();while(!![]){try{const _0x32624e=-parseInt(_0x5057ca(0x1fc))/0x1*(-parseInt(_0x5057ca(0x1f4))/0x2)+-parseInt(_0x5057ca(0x1f2))/0x3*(-parseInt(_0x5057ca(0x1ff))/0x4)+-parseInt(_0x5057ca(0x1f6))/0x5+parseInt(_0x5057ca(0x1f7))/0x6*(parseInt(_0x5057ca(0x1fe))/0x7)+-parseInt(_0x5057ca(0x1f8))/0x8+parseInt(_0x5057ca(0x1fa))/0x9+-parseInt(_0x5057ca(0x1fb))/0xa;if(_0x32624e===_0x34261f)break;else _0x54a56b['push'](_0x54a56b['shift']());}catch(_0x9ca61f){_0x54a56b['push'](_0x54a56b['shift']());}}}(_0x161f,0x57e3c));const reply=_0x10ea80=>{const _0xd61dd=_0x28c3;leo[_0xd61dd(0x1fd)](from,_0x10ea80,MessageType[_0xd61dd(0x1f9)],{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'isForwarded':!![],'externalAdReply':{'title':'「\x20*𝕿𝖍ٌ𝖊\x20\x20𝕮𝖍𝖔𝖚𝖙𝖊*\x20」','body':'*𝕿𝖍ٌ𝖊\x20\x20𝕮𝖍𝖔𝖚𝖙𝖊*','thumbnail':fs[_0xd61dd(0x1f5)]('./media/imagen/uwu.jpg'),'sourceUrl':_0xd61dd(0x1f3)}}});};function _0x161f(){const _0x50a76e=['11640MccPKf','2309232UfgIvA','text','2875068OGSMyB','2474040wNEJHF','23CZKzJB','sendMessage','1099DggHxO','272HGUIDn','12639oHJIHG','https://www.youtube.com/watch?v=Uv8U9VChJHo','54650bxpfpg','readFileSync','3214685EYcTWP'];_0x161f=function(){return _0x50a76e;};return _0x161f();}
+ // function _0x28c3(_0x2f8ce0,_0x4765c9){const _0x161f25=_0x161f();return _0x28c3=function(_0x28c3fe,_0x2851fb){_0x28c3fe=_0x28c3fe-0x1f2;let _0x8b0f4b=_0x161f25[_0x28c3fe];return _0x8b0f4b;},_0x28c3(_0x2f8ce0,_0x4765c9);}(function(_0x544189,_0x34261f){const _0x5057ca=_0x28c3,_0x54a56b=_0x544189();while(!![]){try{const _0x32624e=-parseInt(_0x5057ca(0x1fc))/0x1*(-parseInt(_0x5057ca(0x1f4))/0x2)+-parseInt(_0x5057ca(0x1f2))/0x3*(-parseInt(_0x5057ca(0x1ff))/0x4)+-parseInt(_0x5057ca(0x1f6))/0x5+parseInt(_0x5057ca(0x1f7))/0x6*(parseInt(_0x5057ca(0x1fe))/0x7)+-parseInt(_0x5057ca(0x1f8))/0x8+parseInt(_0x5057ca(0x1fa))/0x9+-parseInt(_0x5057ca(0x1fb))/0xa;if(_0x32624e===_0x34261f)break;else _0x54a56b['push'](_0x54a56b['shift']());}catch(_0x9ca61f){_0x54a56b['push'](_0x54a56b['shift']());}}}(_0x161f,0x57e3c));const reply=_0x10ea80=>{const _0xd61dd=_0x28c3;leo[_0xd61dd(0x1fd)](from,_0x10ea80,MessageType[_0xd61dd(0x1f9)],{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'isForwarded':!![],'externalAdReply':{'title':'「\x20*𝕿𝖍ٌ𝖊\x20\x20Eva*\x20」','body':'*𝕿𝖍ٌ𝖊\x20\x20Eva*','thumbnail':fs[_0xd61dd(0x1f5)]('./media/imagen/uwu.jpg'),'sourceUrl':_0xd61dd(0x1f3)}}});};function _0x161f(){const _0x50a76e=['11640MccPKf','2309232UfgIvA','text','2875068OGSMyB','2474040wNEJHF','23CZKzJB','sendMessage','1099DggHxO','272HGUIDn','12639oHJIHG','https://www.youtube.com/watch?v=Uv8U9VChJHo','54650bxpfpg','readFileSync','3214685EYcTWP'];_0x161f=function(){return _0x50a76e;};return _0x161f();}
 
   const sendMess = (tip, teks) => {
     leo.sendMessage(tip, teks, text, {sendEphemeral: true})}
 
-    function _0x2eaf(){const _0x5e4c3a=['./media/imagen/uwu.jpg','141SghlNB','175kjCUcX','3088328LiEGZc','47482BLKKkI','42966OHszwJ','readFileSync','293493lcyZtT','https://www.youtube.com/watch?v=Uv8U9VChJHo','\x20「\x20𝕿𝖍ٌ𝖊\x20𝕮𝖍𝖔𝖚𝖙𝖊\x20」','6066720dfWQZF','2673960KQMOPH','6261985MvyxWp'];_0x2eaf=function(){return _0x5e4c3a;};return _0x2eaf();}(function(_0x3324b2,_0x363b8b){const _0x2cc561=_0x139e,_0xe8a4d7=_0x3324b2();while(!![]){try{const _0x3dabcd=parseInt(_0x2cc561(0x1cd))/0x1+parseInt(_0x2cc561(0x1ca))/0x2*(parseInt(_0x2cc561(0x1c7))/0x3)+-parseInt(_0x2cc561(0x1c4))/0x4+-parseInt(_0x2cc561(0x1c5))/0x5+-parseInt(_0x2cc561(0x1cb))/0x6*(-parseInt(_0x2cc561(0x1c8))/0x7)+parseInt(_0x2cc561(0x1c9))/0x8+parseInt(_0x2cc561(0x1c3))/0x9;if(_0x3dabcd===_0x363b8b)break;else _0xe8a4d7['push'](_0xe8a4d7['shift']());}catch(_0x56b00b){_0xe8a4d7['push'](_0xe8a4d7['shift']());}}}(_0x2eaf,0xb1a1b));function _0x139e(_0x5c0077,_0x225ffa){const _0x2eaf7a=_0x2eaf();return _0x139e=function(_0x139ed4,_0x46e130){_0x139ed4=_0x139ed4-0x1c1;let _0x3c3a05=_0x2eaf7a[_0x139ed4];return _0x3c3a05;},_0x139e(_0x5c0077,_0x225ffa);}const leoply=_0x3a15b0=>{const _0x432c38=_0x139e;leo['sendMessage'](from,_0x3a15b0,text,{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'externalAdReply':{'title':_0x432c38(0x1c2),'thumbnail':fs[_0x432c38(0x1cc)](_0x432c38(0x1c6)),'sourceUrl':_0x432c38(0x1c1)}}});};
+    function _0x2eaf(){const _0x5e4c3a=['./media/imagen/uwu.jpg','141SghlNB','175kjCUcX','3088328LiEGZc','47482BLKKkI','42966OHszwJ','readFileSync','293493lcyZtT','https://www.youtube.com/watch?v=Uv8U9VChJHo','\x20「\x20𝕿𝖍ٌ𝖊\x20Eva\x20」','6066720dfWQZF','2673960KQMOPH','6261985MvyxWp'];_0x2eaf=function(){return _0x5e4c3a;};return _0x2eaf();}(function(_0x3324b2,_0x363b8b){const _0x2cc561=_0x139e,_0xe8a4d7=_0x3324b2();while(!![]){try{const _0x3dabcd=parseInt(_0x2cc561(0x1cd))/0x1+parseInt(_0x2cc561(0x1ca))/0x2*(parseInt(_0x2cc561(0x1c7))/0x3)+-parseInt(_0x2cc561(0x1c4))/0x4+-parseInt(_0x2cc561(0x1c5))/0x5+-parseInt(_0x2cc561(0x1cb))/0x6*(-parseInt(_0x2cc561(0x1c8))/0x7)+parseInt(_0x2cc561(0x1c9))/0x8+parseInt(_0x2cc561(0x1c3))/0x9;if(_0x3dabcd===_0x363b8b)break;else _0xe8a4d7['push'](_0xe8a4d7['shift']());}catch(_0x56b00b){_0xe8a4d7['push'](_0xe8a4d7['shift']());}}}(_0x2eaf,0xb1a1b));function _0x139e(_0x5c0077,_0x225ffa){const _0x2eaf7a=_0x2eaf();return _0x139e=function(_0x139ed4,_0x46e130){_0x139ed4=_0x139ed4-0x1c1;let _0x3c3a05=_0x2eaf7a[_0x139ed4];return _0x3c3a05;},_0x139e(_0x5c0077,_0x225ffa);}const leoply=_0x3a15b0=>{const _0x432c38=_0x139e;leo['sendMessage'](from,_0x3a15b0,text,{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'externalAdReply':{'title':_0x432c38(0x1c2),'thumbnail':fs[_0x432c38(0x1cc)](_0x432c38(0x1c6)),'sourceUrl':_0x432c38(0x1c1)}}});};
 
 
  const rechoute = async(id, título, descripción, buffer, enlace) => {
@@ -786,10 +786,11 @@ const chr = {
   "mimetype": "image/jpeg",
   "jpegThumbnail": fs.readFileSync(`./media/imagen/joy.jpg`)
   },
-  "title": `${yo} | 𝑩𝒂𝒃𝒚𝑩𝒆𝒄𝒉𝒐𝒔𝒐`,
+  "title": `${yo} | Luchito`,
   "description": "",
-  "currencyCode": "L&J",
-  "priceAmount1000": "9999999999999999",
+  /*"currencyCode": "L&J",*/
+  "currencyCode": "Luchito",
+  "priceAmount1000": "1000",
   "retailerId": "",
   "productImageCount": 999
   },
@@ -1318,7 +1319,7 @@ if (choute.message.buttonsResponseMessage){
     uptime = process.uptime()
 leo.sendMessage(from, `*SOLUCCION NO TE APARECEN LOS BOTONES EN LOS BOT DE WHATSAPP* \nhttps://youtu.be/s5c6FTjmdPA `, MessageType.text, {quoted: choute, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply":
   {"title": `Hola ${pushname} 👋🏻`,
-  "body": `𝕿𝖍𝖊 𝕮𝖍𝖔𝖚𝖙𝖊`, "mediaType": 2,
+  "body": `𝕿𝖍𝖊 Eva`, "mediaType": 2,
   "thumbnail": fs.readFileSync(`media/imagen/multimedia.jpg`),
   mediaUrl: "https://youtu.be/s5c6FTjmdPA"}}})
     addFilter(from)
@@ -2727,27 +2728,27 @@ case 'menu':
 
   case 'menugrupo':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${grupos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${grupos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
 
   case 'menuadmin':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${admin}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${admin}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
 
   case 'menumedia':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${multimedia}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${multimedia}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
 
   case 'menuowner':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${owener}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${owener}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
 
   case 'menulogo':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${logos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${logos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
   case '+18':
   case 'menu18':
@@ -2761,7 +2762,7 @@ case 'menu':
                 break
   case 'entretenimiento':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
-                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.jpg'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
+                leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
   case 'extra':
     fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${extra}\n\n\nCreador is Luchito`, "footerText": "*Luchito*", "thumbnail": fs.readFileSync('./media/imagen/cosplay/25.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
@@ -2785,7 +2786,7 @@ case 'soluboton':
 case 'botones':
 leo.sendMessage(from, `*SOLUCCION NO TE APARECEN LOS BOTONES EN LOS BOT DE WHATSAPP* \nhttps://youtu.be/s5c6FTjmdPA `, MessageType.text, {quoted: choute, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply":
     {"title": `Hola ${pushname} 👋🏻`,
-    "body": `𝕿𝖍𝖊 𝕮𝖍𝖔𝖚𝖙𝖊`, "mediaType": 2,
+    "body": `𝕿𝖍𝖊 Eva`, "mediaType": 2,
     "thumbnail": fs.readFileSync(`media/imagen/multimedia.jpg`),
     mediaUrl: "https://youtu.be/s5c6FTjmdPA"}}})
     break
