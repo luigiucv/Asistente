@@ -1420,7 +1420,7 @@ if (body.includes("https://")){
   reply("adios")
   }, 0)
   }
-if (body.includes("https://wa.me")){
+if (body.includes("wa.me/")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐🧐')
@@ -1438,7 +1438,7 @@ if (body.includes("https://wa.me")){
   reply("adios")
   }, 0)
   }
-if (body.includes("https://t.me/")){
+if (body.includes("t.me/")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐🧐')
@@ -1510,7 +1510,25 @@ leo.updatePresence(from, Presence.composing)
 reply("adios")
 }, 0)
 }
-if (body.includes(".https://chat.whatsapp.com/")){
+if (body.includes(".es")){
+  if (!isGroup) return
+  if (!isAntiLink) return
+  if (isAdmin) return('🧐🧐')
+  if (itsMe) return
+  if (!botAdmin & isAntiLink & isGroup)
+  
+  leo.updatePresence(from, Presence.composing)
+  var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+  reply(`Los links no son permitidos @${sender.split("@")[0]}`)
+  setTimeout( () => {
+  leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+  }, 1000)
+  setTimeout( () => {
+  leo.updatePresence(from, Presence.composing)
+  reply("adios")
+  }, 0)
+  }
+if (body.includes("chat.whatsapp.com/")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐🧐')
