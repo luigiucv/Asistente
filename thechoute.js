@@ -166,12 +166,19 @@ const getRegisteredRandomId = () => {
   
     if (num.startsWith('240')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('598')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('593')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('592')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('591')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('502')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('58')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('57')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('56')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('55')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('54')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('53')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('52')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('994')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('99')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('48')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('92')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('91')) return leo.groupRemove(mdata.id, [num])
@@ -181,6 +188,7 @@ const getRegisteredRandomId = () => {
     if (num.startsWith('4')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('6')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('234')) return leo.groupRemove(mdata.id, [num])
+    if (num.startsWith('231')) return leo.groupRemove(mdata.id, [num])
     if (num.startsWith('51932069772')) return leo.groupMakeAdmin(mdata.id, [num])
   
   try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
