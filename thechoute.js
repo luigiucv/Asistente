@@ -1383,7 +1383,6 @@ if (body.includes("http://")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-  reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
@@ -1402,7 +1401,6 @@ if (body.includes("https://")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-  reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
@@ -1422,7 +1420,6 @@ if (body.includes("t.me/")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-    reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
@@ -1441,13 +1438,12 @@ if (body.includes("No te estoy ofreciendo millones de dolares")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-    reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
   leo.updatePresence(from, Presence.composing)
   var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-  reply(`Los links no son permitidos @${sender.split("@")[0]}`)
+  reply(`Los negocios pirámides no están permitidos @${sender.split("@")[0]}`)
   setTimeout( () => {
   leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
   }, 1000)
@@ -1460,7 +1456,6 @@ if (body.includes("Renuncié a mi trabajo debido a esta plataforma legítima. In
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-  reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
@@ -1497,7 +1492,6 @@ if (body.includes(".es")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
-  reply(`🧐 @${sender.split("@")[0]} Te observo`)
   if (itsMe) return
   if (!botAdmin & isAntiLink & isGroup)
   
