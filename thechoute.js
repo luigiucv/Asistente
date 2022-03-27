@@ -218,7 +218,7 @@ const getRegisteredRandomId = () => {
     
      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenido a *${mdata.subject}*
-Descripción del grupo 01: ${groupMetadata.desc}
+Descripción del grupo 01: ${mdata.desc}
 -Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
 Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
 🚫 *ESTÁ PROHIBIDO* 🚫
@@ -402,7 +402,7 @@ isCharge: "" || false
   const sendMess = (tip, teks) => {
     leo.sendMessage(tip, teks, text, {sendEphemeral: true})}
 
-    function _0x2eaf(){const _0x5e4c3a=['./media/imagen/uwu.jpg','141SghlNB','175kjCUcX','3088328LiEGZc','47482BLKKkI','42966OHszwJ','readFileSync','293493lcyZtT','https://wa.me/51932069772','\x20「\x20єνα\x20αѕιѕтαηт\x20」','6066720dfWQZF','2673960KQMOPH','6261985MvyxWp'];_0x2eaf=function(){return _0x5e4c3a;};return _0x2eaf();}(function(_0x3324b2,_0x363b8b){const _0x2cc561=_0x139e,_0xe8a4d7=_0x3324b2();while(!![]){try{const _0x3dabcd=parseInt(_0x2cc561(0x1cd))/0x1+parseInt(_0x2cc561(0x1ca))/0x2*(parseInt(_0x2cc561(0x1c7))/0x3)+-parseInt(_0x2cc561(0x1c4))/0x4+-parseInt(_0x2cc561(0x1c5))/0x5+-parseInt(_0x2cc561(0x1cb))/0x6*(-parseInt(_0x2cc561(0x1c8))/0x7)+parseInt(_0x2cc561(0x1c9))/0x8+parseInt(_0x2cc561(0x1c3))/0x9;if(_0x3dabcd===_0x363b8b)break;else _0xe8a4d7['push'](_0xe8a4d7['shift']());}catch(_0x56b00b){_0xe8a4d7['push'](_0xe8a4d7['shift']());}}}(_0x2eaf,0xb1a1b));function _0x139e(_0x5c0077,_0x225ffa){const _0x2eaf7a=_0x2eaf();return _0x139e=function(_0x139ed4,_0x46e130){_0x139ed4=_0x139ed4-0x1c1;let _0x3c3a05=_0x2eaf7a[_0x139ed4];return _0x3c3a05;},_0x139e(_0x5c0077,_0x225ffa);}const leoply=_0x3a15b0=>{const _0x432c38=_0x139e;leo['sendMessage'](from,_0x3a15b0,text,{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'externalAdReply':{'title':_0x432c38(0x1c2),'thumbnail':fs[_0x432c38(0x1cc)](_0x432c38(0x1c6)),'sourceUrl':_0x432c38(0x1c1)}}});};
+    function _0x2eaf(){const _0x5e4c3a=['./media/imagen/uwu.jpg','141SghlNB','175kjCUcX','3088328LiEGZc','47482BLKKkI','42966OHszwJ','readFileSync','293493lcyZtT','「\x20єνα\x20αѕιѕтαηт\x20」','6066720dfWQZF','2673960KQMOPH','6261985MvyxWp'];_0x2eaf=function(){return _0x5e4c3a;};return _0x2eaf();}(function(_0x3324b2,_0x363b8b){const _0x2cc561=_0x139e,_0xe8a4d7=_0x3324b2();while(!![]){try{const _0x3dabcd=parseInt(_0x2cc561(0x1cd))/0x1+parseInt(_0x2cc561(0x1ca))/0x2*(parseInt(_0x2cc561(0x1c7))/0x3)+-parseInt(_0x2cc561(0x1c4))/0x4+-parseInt(_0x2cc561(0x1c5))/0x5+-parseInt(_0x2cc561(0x1cb))/0x6*(-parseInt(_0x2cc561(0x1c8))/0x7)+parseInt(_0x2cc561(0x1c9))/0x8+parseInt(_0x2cc561(0x1c3))/0x9;if(_0x3dabcd===_0x363b8b)break;else _0xe8a4d7['push'](_0xe8a4d7['shift']());}catch(_0x56b00b){_0xe8a4d7['push'](_0xe8a4d7['shift']());}}}(_0x2eaf,0xb1a1b));function _0x139e(_0x5c0077,_0x225ffa){const _0x2eaf7a=_0x2eaf();return _0x139e=function(_0x139ed4,_0x46e130){_0x139ed4=_0x139ed4-0x1c1;let _0x3c3a05=_0x2eaf7a[_0x139ed4];return _0x3c3a05;},_0x139e(_0x5c0077,_0x225ffa);}const leoply=_0x3a15b0=>{const _0x432c38=_0x139e;leo['sendMessage'](from,_0x3a15b0,text,{'sendEphemeral':!![],'quoted':choute,'contextInfo':{'forwardingScore':0x1fc,'externalAdReply':{'title':_0x432c38(0x1c2),'thumbnail':fs[_0x432c38(0x1cc)](_0x432c38(0x1c6)),'sourceUrl':_0x432c38(0x1c1)}}});};
 
 
  const rechoute = async(id, título, descripción, buffer, enlace) => {
@@ -1868,27 +1868,26 @@ if (nombre.length >= 10) return reply(`Escriba un nombre con menos de 10 letras,
 if (edad > 35) return reply(`Pero-\n*Tienes mas de  30 años, no te puedes registrar, mejor cuida tus nietos :D*`)
 if (edad < 13) return reply(`Eres menor de 13 años, mejor ve hacer tus tareas, que para ti no hay registro.`)
 function _0x2ebb(){const _0x1f3a36=['596272DpXnFJ','3014956bQCwYI','305JopJQj','random','2228ohmCxL','length','536emrlcz','10PFFhRj','58842aSBvqN','43842MEaDFW','9503252VrVLos','967866wYoLpq','floor','786TgYlYm'];_0x2ebb=function(){return _0x1f3a36;};return _0x2ebb();}const _0x30a7da=_0x5a02;function _0x5a02(_0x53b46b,_0x2e0f92){const _0x2ebb0e=_0x2ebb();return _0x5a02=function(_0x5a027e,_0x5d59a6){_0x5a027e=_0x5a027e-0x192;let _0x4492c1=_0x2ebb0e[_0x5a027e];return _0x4492c1;},_0x5a02(_0x53b46b,_0x2e0f92);}(function(_0x21bf49,_0x2c895d){const _0x4774dd=_0x5a02,_0x36356f=_0x21bf49();while(!![]){try{const _0x3b0a2f=-parseInt(_0x4774dd(0x19a))/0x1+-parseInt(_0x4774dd(0x197))/0x2+-parseInt(_0x4774dd(0x199))/0x3*(-parseInt(_0x4774dd(0x19e))/0x4)+parseInt(_0x4774dd(0x19c))/0x5*(parseInt(_0x4774dd(0x195))/0x6)+parseInt(_0x4774dd(0x19b))/0x7+-parseInt(_0x4774dd(0x192))/0x8*(parseInt(_0x4774dd(0x194))/0x9)+parseInt(_0x4774dd(0x193))/0xa*(parseInt(_0x4774dd(0x196))/0xb);if(_0x3b0a2f===_0x2c895d)break;else _0x36356f['push'](_0x36356f['shift']());}catch(_0x570495){_0x36356f['push'](_0x36356f['shift']());}}}(_0x2ebb,0x59db2));const n1='1',n2='2',n3='3',n4='4',n5='5',n6='6',n7='7',n8='8',n9='9',n0='0',N1=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],h1=N1[Math[_0x30a7da(0x198)](Math['random']()*N1[_0x30a7da(0x19f)])],N2=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],e1=N2[Math[_0x30a7da(0x198)](Math[_0x30a7da(0x19d)]()*N2[_0x30a7da(0x19f)])],N3=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],ee=N3[Math[_0x30a7da(0x198)](Math['random']()*N3[_0x30a7da(0x19f)])],N4=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],c=N4[Math[_0x30a7da(0x198)](Math['random']()*N4[_0x30a7da(0x19f)])],N5=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],h=N5[Math['floor'](Math[_0x30a7da(0x19d)]()*N5['length'])],N6=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],o=N6[Math['floor'](Math[_0x30a7da(0x19d)]()*N6[_0x30a7da(0x19f)])],N7=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],u=N7[Math[_0x30a7da(0x198)](Math[_0x30a7da(0x19d)]()*N7[_0x30a7da(0x19f)])],N8=[''+n1,''+n2,''+n3,''+n4,''+n5,''+n6,''+n7,''+n8,''+n9,''+n0],t=N8[Math[_0x30a7da(0x198)](Math[_0x30a7da(0x19d)]()*N8[_0x30a7da(0x19f)])],N9=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'],e=N9[Math[_0x30a7da(0x198)](Math[_0x30a7da(0x19d)]()*N9[_0x30a7da(0x19f)])],DNI=''+h1+e1+ee+c+h+o+u+t+e;
-try {
+/*try {
     ppimg = await leo.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
     }
     catch {
     ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'
-    }
+    }*/
     veri = sender
 addRegisteredUser(sender, pushname, nombre, edad, time, serialUser)
 txtt = `┌────「 *REGISTRADO* 」─
 [💈] *USER*: @${sender.split("@")[0]}
 [💈] *NOMBRE* _${nombre}_
-└────「 *𝕷𝖚𝖈𝖍𝖎𝖙𝖔* 」
-Verificación completa usa *${prefix}menu* para ver el Menu`
-    let tampa = await getBuffer(ppimg)
+└─────────────────」
+Usa *${prefix}menu* para ver el Menu`
+    //let tampa = await getBuffer(ppimg)
     //leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
     buttons1 = [ {buttonId:`mlq`,buttonText:{displayText: 'Lista de Menus'},type:1}/*,
   {buttonId:`sex`,buttonText:{displayText:'Como Tener Este Bot'},type:1}*/],
-    imageMsg = (await leo.prepareMessageMedia((tampa), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
-    footerText: `Total de Registrados: ${_registered.length}\nCreador ${yo}}\nSi no ves los botones, escribe ${prefix}botones, para que te aparezca la soluccion.`, imageMessage: imageMsg,
+    footerText: `Total de Registrados: ${_registered.length}\nCreador ${yo}`,
     buttons: buttons1,
     headerType: 4}
     prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
