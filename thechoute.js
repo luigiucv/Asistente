@@ -74,7 +74,7 @@ const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W,
 const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 //const { linkgp } = require ('./lib/exportaciones/linkgp')
-const {grupos, admin, m18, multimedia, owener,extra, entrete, menual, menusticker} = require ('./lib/menus/menu');
+const {grupos, admin, /*m18,*/ multimedia, owener,extra, entrete, menual, menusticker} = require ('./lib/menus/menu');
 const {install, ts, agra } = require ('./lib/txt')
 
 // ☷☷ ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ | ALMACENAR DATOS
@@ -218,6 +218,7 @@ const getRegisteredRandomId = () => {
     
      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenido a *${mdata.subject}*
+${anu.desc}
 Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
 Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
 🚫 *ESTÁ PROHIBIDO* 🚫
@@ -2569,21 +2570,18 @@ break
 case 'menu':
 //case 'a':
 
-                if (!isRegister) return leoply(baby.only.usrReg)
-                if (isBan) return leoply  (baby.only.benned)
-                reply('Cargando Menu, Porfavor no hacer spam de mensaje')
-               txtt =`${cmenu}`
-                sendButLocation(from, `${txtt}`, `Si no ves los botones, escribe ${prefix}botones, para que te aparezca la soluccion.\nCreador @${ownerNumber.split("@")[0]}`, fs.readFileSync("./media/imagen/absu.jpg"),
-                buttons =[ {buttonId:`mlq`,buttonText:{displayText: 'Lista de Menus'},type:1}/*,
-                {buttonId:`sex`,buttonText:{displayText:'Como Tener Este Bot'},type:1},
-                {buttonId:`nuevo`,buttonText:{displayText:'LO NUEVO DEL BOT'},type:1}*/],
-                {contextInfo: { mentionedJid: [sender,ownerNumber]}})
-                men = leo.prepareMessageFromContent(from, { buttonsMessages })
-                leo.relayWAMessage(men)
-                break
-
-
-
+    if (!isRegister) return leoply(baby.only.usrReg)
+    if (isBan) return leoply  (baby.only.benned)
+    reply('Cargando Menu, Porfavor no hacer spam de mensaje')
+    txtt =`${cmenu}`
+    sendButLocation(from, `${txtt}`, ``,
+    buttons =[ {buttonId:`mlq`,buttonText:{displayText: 'Lista de Menus'},type:1}/*,
+    {buttonId:`sex`,buttonText:{displayText:'Como Tener Este Bot'},type:1},
+    {buttonId:`nuevo`,buttonText:{displayText:'LO NUEVO DEL BOT'},type:1}*/],
+    {contextInfo: { mentionedJid: [sender,ownerNumber]}})
+    men = leo.prepareMessageFromContent(from, { buttonsMessages })
+    leo.relayWAMessage(men)
+    break
 
   //𝐋𝐢𝐬𝐭𝐚 𝐝𝐞 𝐌𝐞𝐧𝐮𝐬´
 
@@ -2597,13 +2595,16 @@ case 'menu':
                                 txtt =`${allmenu}`
                   txtt =
                   `${allmenu}`
-                  buttons1 = [{buttonId:`mamaguevo`,buttonText:{displayText: 'Creditos'},type:1},
-                {buttonId:`IM4K`,buttonText:{displayText: 'Creador'},type:1},
-                {buttonId:`IM4K`,buttonText:{displayText: 'Como ser un bot'},type:1}]
-                    imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-                    buttonsMessage = {
+                  /*buttons1 = [
+                    {buttonId:`mamaguevo`,buttonText:{displayText: 'Creditos'},type:1},
+                    {buttonId:`IM4K`,buttonText:{displayText: 'Creador'},type:1},
+                    {buttonId:`IM4K`,buttonText:{displayText: 'Como ser un bot'},type:1}]*/
+                  /*imageMsg = (await leo.prepareMessageMedia(
+                    fs.readFileSync(`./media/imagen/bot-baby.jpg`),
+                    'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage*/
+                  buttonsMessage = {
                     contentText: `${txtt}`,
-                    footerText: '© Creator ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░', imageMessage: imageMsg,
+                    footerText: '© Creator ᏝʊፈħᎥƚσ', imageMessage: imageMsg,
                     buttons: buttons1,
                     headerType: 4}
                     all = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute, contextInfo: { mentionedJid: [sender,ownerNumber]} })
@@ -2634,7 +2635,7 @@ case 'menu':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${logos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
-  case '+18':
+  /*case '+18':
   case 'menu18':
   case 'labiblia':
 
@@ -2643,7 +2644,7 @@ case 'menu':
                 "body": 'descripción',
                 "thumbnail": fs.readFileSync('./media/imagen/d.jpg'),
                 "sourceUrl": 'https://chat.whatsapp.com/LKQoFnqUYcKL8XPkQmRrCh'}}})
-                break
+                break*/
   case 'entretenimiento':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
@@ -4078,7 +4079,7 @@ case 'enlinea':
                   contextInfo: { mentionedJid: online }
                   })
                   break
-
+/*
 case 'infogrupo':
 case 'infogp':
                   if (isBan) return leoply  (baby.only.benned)	
@@ -4099,6 +4100,7 @@ case 'infogp':
 ${groupMetadata.desc}
 `, })
 break
+*/
 /*
 case "babybot":
 case "rentbot":
