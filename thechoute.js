@@ -210,7 +210,7 @@ const getRegisteredRandomId = () => {
     if (num.startsWith('51932069772')) return leo.groupMakeAdmin(mdata.id, [num])
   
   try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
-    } catch {pushnem = num.split('@')[0]}
+    } catch {pushnem = num.split('@')[0]}    
     try {
     ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
     catch {
@@ -219,7 +219,6 @@ const getRegisteredRandomId = () => {
      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenido a *${mdata.subject}*
 Descripción del grupo 01: ${groupMetadata.desc}
-Descripción del grupo 02: ${mdata.desc}
 -Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
 Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
 🚫 *ESTÁ PROHIBIDO* 🚫
@@ -241,20 +240,24 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
     num = anu.participants[0]
     try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
   } catch {pushnem = num.split('@')[0]}
+/*
   try {
   ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
   catch {
-  ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
+  ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}
+*/
     teks = `
 @${num.split('@')[0]} No será lo mismo sin ti. *¡De hecho, será mejor!* jaja... Adios.`
-    let fotoP = await getBuffer(ppimg)
-    leo.sendMessage(mdata.id, fotoP, MessageType.image,{caption: teks, contextInfo: {"mentionedJid": [num]}})
+    /*let fotoP = await getBuffer(ppimg)*/
+    leo.sendMessage(mdata.id, /*fotoP, MessageType.image,*/{caption: teks, contextInfo: {"mentionedJid": [num]}})
   
     } else if (anu.action == 'promote') {
     num = anu.participants[0]
+/*
     try { ppimg = await leo.getProfilePicture(`${num.split('@')[0]}@c.us`)
     } catch {ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
     }
+*/
     thu = await leo.getStatus(anu.participants[0], MessageType.text)
     teks = 
   `👑 *NUEVO ADMIN* 👑
@@ -262,15 +265,17 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
   📋 *INFO:* ${thu.status}
   🌎 *Grupo:* ${mdata.subject}
   *Felicitaciones eres uno de los administradores.*`
-   let buff = await getBuffer(ppimg)
-    leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+   /*let buff = await getBuffer(ppimg)*/
+    leo.sendMessage(mdata.id, /*buff, MessageType.image,*/ {caption: teks, contextInfo: {"mentionedJid": [num]}})
     } else if (anu.action == 'demote') {
     num = anu.participants[0]
+/*
     try {
     ppimg = await leo.getProfilePicture(`${num.split('@')[0]}@c.us`)
     } catch {
     ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
     }
+ */   
     thu = await leo.getStatus(anu.participants[0], MessageType.text)
     teks = 
   `❌ *ADMIN MENOS* ❌
@@ -278,8 +283,8 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
   📋 *INFO:* ${thu.status}
   🌎 *Grupo:* ${mdata.subject} 
   *F chota ya no eres administrador.*`
-    let buff = await getBuffer(ppimg)
-  leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+    /*let buff = await getBuffer(ppimg)*/
+  leo.sendMessage(mdata.id, /*buff, MessageType.image,*/ {caption: teks, contextInfo: {"mentionedJid": [num]}})
   
     }
     } catch (e) {
