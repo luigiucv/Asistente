@@ -218,7 +218,7 @@ const getRegisteredRandomId = () => {
     
      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenido a *${mdata.subject}*
-*${groupMetadata.desc}*
+${groupMetadata.description}
 Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
 Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
 🚫 *ESTÁ PROHIBIDO* 🚫
@@ -982,7 +982,7 @@ if (test.includes(`grupo`)){
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`nuevo`)){
-  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador is ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
+  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador es ᏝʊፈħᎥƚσ`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
   leo.relayWAMessage(fansh)
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
@@ -1119,7 +1119,7 @@ if (choute.message.listResponseMessage){
     if (test.includes(`sticke`)){
     leo.updatePresence(from, Presence.composing)
     if (!isRegister) return leoply(baby.only.usrReg)
-    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${menusticker}\n\n\nCreador is ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/cosplay/25.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
+    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${menusticker}\n\n`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
     leo.relayWAMessage(fansh)
     addFilter(from)
     addLevelingLevel(sender, 5)	}}
@@ -1270,29 +1270,6 @@ if (test.includes(`reto`)){
   reply(answer)
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
-
-
-    if (choute.message.buttonsResponseMessage){
-      test = choute.message.buttonsResponseMessage.selectedButtonId
-      if (test.includes(`mamaguevo`)){
-        if (isBan) return leoply  (baby.only.benned)
-        if (!isRegister) return leoply(baby.only.usrReg)
-    const cospla =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-    const cosplay1 = cospla[Math.floor(Math.random() * cospla.length)]
-imag = fs.readFileSync(`./media/imagen/cosplay/${cosplay1}.jpg`);
-txtt =`ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ`
-buttons1 = [{buttonId:`mamaguevo`,buttonText:{displayText: 'Siguiente 😋'},type:1},]
-imageMsg = (await leo.prepareMessageMedia((imag), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-buttonsMessage = {
-contentText: `${txtt}`,
-footerText: '© Creator ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░', imageMessage: imageMsg,
-buttons: buttons1,
-headerType: 4}
-prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
-leo.relayWAMessage(prep)
-addFilter(from)
-addLevelingLevel(sender, 5)	}}
-
 
     //LISTA
     if (choute.message.buttonsResponseMessage){
@@ -1856,7 +1833,7 @@ txtt = `┌────「 *REGISTRADO* 」─
 [💈] *USER*: @${sender.split("@")[0]}
 [💈] *NOMBRE* _${nombre}_
 └────「 *𝕷𝖚𝖈𝖍𝖎𝖙𝖔* 」
-Verificación completa usa *${prefix}menu* para ver el Menu`
+Usa *${prefix}menu* para ver el Menu`
     let tampa = await getBuffer(ppimg)
     //leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
     buttons1 = [ {buttonId:`mlq`,buttonText:{displayText: 'Lista de Menus'},type:1}/*,
@@ -1864,7 +1841,7 @@ Verificación completa usa *${prefix}menu* para ver el Menu`
     imageMsg = (await leo.prepareMessageMedia((tampa), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
-    footerText: `Total de Registrados: ${_registered.length}\nCreador ${yo}}\nSi no ves los botones, escribe ${prefix}botones, para que te aparezca la soluccion.`, imageMessage: imageMsg,
+    footerText: `Total de Registrados: ${_registered.length}\nCreador ${yo}`, imageMessage: imageMsg,
     buttons: buttons1,
     headerType: 4}
     prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
@@ -1927,7 +1904,7 @@ case 'catalogo':
             } catch {
             ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}
             ft = await getBuffer (ppimg)
-            fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": `${cantidad}`, "totalAmount1000" : '1000', "message": `${name}\n\n\nCreador is ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": ft, "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
+            fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": `${cantidad}`, "totalAmount1000" : '1000', "message": `${name}\n\n\nCreador es ᏝʊፈħᎥƚσ`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": ft, "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
             leo.relayWAMessage(fansh)
             break
 
@@ -2673,7 +2650,8 @@ case 'menu':
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
   case 'extra':
-    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${extra}\n\n\nCreador is ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/cosplay/25.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
+    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${extra}\n\n\nCreador es ᏝʊፈħᎥƚσ`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
+    //"footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/cosplay/25.jpg'),
     leo.relayWAMessage(fansh)
     break
   case 'creditos':
@@ -2700,7 +2678,7 @@ leo.sendMessage(from, `*SOLUCCION NO TE APARECEN LOS BOTONES EN LOS BOT DE WHATS
     break
 
 case 'nuevo':
-  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador is ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail":  fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
+  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador es ᏝʊፈħᎥƚσ`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail":  fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
   leo.relayWAMessage(fansh)
   break
 //════════════════════════════════════════ LOGOS ════════════════════════════════
