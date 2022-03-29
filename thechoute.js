@@ -218,7 +218,7 @@ const getRegisteredRandomId = () => {
     
      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenido a *${mdata.subject}*
-${groupMetadata.description}
+${mdata.description}
 Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
 Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
 🚫 *ESTÁ PROHIBIDO* 🚫
