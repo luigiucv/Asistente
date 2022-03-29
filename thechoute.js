@@ -217,21 +217,9 @@ const getRegisteredRandomId = () => {
     ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
     
      teks = `🤗Hola, @${num.split('@')[0]}
-Bienvenido a *${mdata.subject}*
-${mdata.description}
-Si te gustan los *viajes*, *trekking*, *campamentos*, las *aventuras* y *adrenalina* con un presupuesto limitado, estas en el lugar correcto.
-Recuerda siempre seguir las reglas y mantener una formalidad respetuosa.
-🚫 *ESTÁ PROHIBIDO* 🚫
- ❌Hacer SPAM
- ❌Enviar sticker(XXX) 
- ❌Enviar contenido(XXX)
- ❌Enviar enlaces
-  
-🚨 *RECUERDA* 🚨
- ✅Solicitar info de itinerario solo a l@s admin
- ✅Realizar reservas de tours solo con l@s admin
- ✅Para conocer a l@s admin envía: .listadmin
-  `
+Bienvenid@ a *${mdata.subject}*
+${mdata.desc}
+`
   
     let fotoP = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -4056,7 +4044,7 @@ case 'adminslist':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
-            adm = `*Este grupo* *${groupMetadata.subject}*\nTiene ${groupAdmins.length} Administradores.\n\n`
+            adm = `*${groupMetadata.subject}*\nTiene ${groupAdmins.length} Administradores.\n\n`
             no = 0
             for (let admon of groupAdmins) {
             no += 1
