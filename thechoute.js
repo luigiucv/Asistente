@@ -74,7 +74,7 @@ const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W,
 const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 //const { linkgp } = require ('./lib/exportaciones/linkgp')
-const {grupos, admin, m18, multimedia, owener,extra, entrete, menual, menusticker} = require ('./lib/menus/menu');
+const {grupos, admin, multimedia, owener, entrete, menual, menusticker} = require ('./lib/menus/menu');
 const {install, ts, agra } = require ('./lib/txt')
 
 // ☷☷ ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ | ALMACENAR DATOS
@@ -122,7 +122,7 @@ const sleep = async (ms) => {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'M18', 'multimedia', 'TikTok', 'uwu']
+const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'multimedia', 'TikTok', 'uwu']
 const imgramdon = img[Math.floor(Math.random() * img.length)]
 //CREADOR
 const yo = `𝕷𝖚𝖈𝖍𝖎𝖙𝖔`
@@ -1094,20 +1094,6 @@ addLevelingLevel(sender, 5)	}}
     addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
-    if (choute.message.listResponseMessage){
-      test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
-      if (test.includes(`m18`)){
-      leo.updatePresence(from, Presence.composing)
-      if (!isRegister) return leoply(baby.only.usrReg)
-      uptime = process.uptime()
-        leo.sendMessage(from,  fs.readFileSync('./media/imagen/M18.jpg'), image, {thumbnail:fs.readFileSync('./media/imagen/fake18.jpg'), quoted: choute, caption: `${m18}`, contextInfo: { mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true, "externalAdReply":
-        {"title": 'Uso Bajo Su Responsabilidad',
-        "body": 'descripción',
-        "thumbnail": fs.readFileSync('./media/imagen/d.jpg'),
-        "sourceUrl": 'https://chat.whatsapp.com/LKQoFnqUYcKL8XPkQmRrCh'}}})
-
-      }}
-
 //CREDOR
 if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
@@ -1735,25 +1721,24 @@ break
 case 'mtp':
 case 'multiprefijo':
 case 'multiprefix':
-                    if (isBan) return leoply  (baby.only.benned)
-                    if (!isGroup) return leoply(baby.only.group)
-                    if (!isAdmin) return leoply(baby.only.admin)
-                    if (!botAdmin) return leoply (baby.only.Badmin)
-                    if (args.length < 1) return reply('Escribe on para activar')
-                    if ((args[0]) === 'on') {
-                    if (isMultiPrefix) return reply('Ya está activo')
-                    multiprefix.push(from)
-                    fs.writeFileSync('./src/multiprefix.json', JSON.stringify(multiprefix))
-                    reply('Multiprefijos Activado Exitosamente')}
-                    else if ((args[0]) === 'off') {
-                    if (!isMultiPrefix) return reply('El antilink ha sido desactivado exitosamente del grupo.')
-                    var ini = multiprefix.indexOf(from)
-                    multiprefix.splice(ini, 1)
-                    fs.writeFileSync('./src/multiprefix.json', JSON.stringify(multiprefix))
-                    reply('Desactivar con éxito ✔️')
-                    } else {reply('Escribe on para activar o off para desactivar')}
-                    break
-
+          if (isBan) return leoply  (baby.only.benned)
+          if (!isGroup) return leoply(baby.only.group)
+          if (!isAdmin) return leoply(baby.only.admin)
+          if (!botAdmin) return leoply (baby.only.Badmin)
+          if (args.length < 1) return reply('Escribe on para activar')
+          if ((args[0]) === 'on') {
+          if (isMultiPrefix) return reply('Ya está activo')
+          multiprefix.push(from)
+          fs.writeFileSync('./src/multiprefix.json', JSON.stringify(multiprefix))
+          reply('Multiprefijos Activado Exitosamente')}
+          else if ((args[0]) === 'off') {
+          if (!isMultiPrefix) return reply('El antilink ha sido desactivado exitosamente del grupo.')
+          var ini = multiprefix.indexOf(from)
+          multiprefix.splice(ini, 1)
+          fs.writeFileSync('./src/multiprefix.json', JSON.stringify(multiprefix))
+          reply('Desactivar con éxito ✔️')
+          } else {reply('Escribe on para activar o off para desactivar')}
+          break
 
 /*
 case 'sinprefijo':
@@ -2317,16 +2302,7 @@ case 'menu':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${logos}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
-  case '+18':
-  case 'menu18':
-  case 'labiblia':
-
-                leo.sendMessage(from,  fs.readFileSync('./media/imagen/M18.jpg'), image, {thumbnail:fs.readFileSync('./media/imagen/fake18.jpg'), quoted: choute, caption: `${texto}\n${m18}`, contextInfo: { mentionedJid: [sender, ownerNumber], "forwardingScore": 508, "isForwarded": true, "externalAdReply":
-                {"title": 'Open your mind 💫',
-                "body": 'descripción',
-                "thumbnail": fs.readFileSync('./media/imagen/d.jpg'),
-                "sourceUrl": 'https://chat.whatsapp.com/LKQoFnqUYcKL8XPkQmRrCh'}}})
-                break
+  
   case 'entretenimiento':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
