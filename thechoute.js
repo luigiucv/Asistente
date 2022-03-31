@@ -1215,71 +1215,11 @@ if (choute.message.buttonsResponseMessage){
     no = 0
     for (let admon of groupAdmins) {
     no += 1
-    adm += `[${no.toString()}] @${admon.split('@')[0]}👈Clic para *DM*\n`
+    adm += `[${no.toString()}] @${admon.split('@')[0]}\n`
     }
     mentions(adm, groupAdmins, true)
     addFilter(from)
       addLevelingLevel(sender, 5)	}}
-
-
-  if (choute.message.listResponseMessage){
-    test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
-    if (test.includes(`Base`)){
-    leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
-    uptime = process.uptime()
-    leo.sendMessage(from, `🔥 SIGUEME EN YOUTUBE🔥 \n${base}`, MessageType.text, {quoted: choute, caption: `${base}`, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply":
-    {"title": `Hola ${pushname} 👋🏻`,
-    "body": `BabyBechoso`, "mediaType": 2,
-    "thumbnail": fs.readFileSync(`media/imagen/fake.jpg`),
-    mediaUrl: "https://www.youtube.com/"}}},
-    {contextInfo: { mentionedJid: [sender,ownerNumber]}})
-    addFilter(from)
-    addLevelingLevel(sender, 5)	}}
-
-
-    if (choute.message.buttonsResponseMessage){
-      test = choute.message.buttonsResponseMessage.selectedButtonId
-      if (test.includes(`hetai`)){
-        if (isBan) return leoply  (baby.only.benned)
-        if (!isRegister) return leoply(baby.only.usrReg)
-        hentaiz = await axios.get('https://nekos.life/api/v2/img/hentai')
-        bufhtz = await getBuffer(hentaiz.data.url)
-          txtt =`ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ`
-          buttons1 = [{buttonId:`hetai`,buttonText:{displayText: 'Siguiente 😋'},type:1}]
-          imageMsg = (await leo.prepareMessageMedia((bufhtz), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-          buttonsMessage = {
-          contentText: `${txtt}`,
-          footerText: 'ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ\n© Creator ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░', imageMessage: imageMsg,
-          buttons: buttons1,
-          headerType: 4}
-          prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
-          leo.relayWAMessage(prep)
-          .catch(err => {
-          return('Intentalo nuevamente..')})
-          addFilter(from)
-          addLevelingLevel(sender, 5)	}}
-
-if (choute.message.buttonsResponseMessage){
-test = choute.message.buttonsResponseMessage.selectedButtonId
-if (test.includes(`loli`)){
-if (isBan) return leoply  (baby.only.benned)
-if (!isRegister) return leoply(baby.only.usrReg)
-  anu = await axios.get('https://nekos.life/api/v2/img/neko')
-  loli = await getBuffer(anu.data.url)
-  imag = loli
-  txtt =`ᴮʸ ᴸᵘⁱᵍⁱ ᴰᶜ`
-  buttons1 = [{buttonId:`loli`,buttonText:{displayText: 'Siguiente 😋'},type:1}]
-  imageMsg = (await leo.prepareMessageMedia((imag), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-  buttonsMessage = {
-  contentText: `${txtt}`,
-  footerText: '*Aviso:* No pulses por pulsar\n© Creator ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░', imageMessage: imageMsg,
-  buttons: buttons1,
-  headerType: 4}
-  prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
-  leo.relayWAMessage(prep)
-          addFilter(from)
-          addLevelingLevel(sender, 5)	}}
 
 if (body.includes("No te estoy ofreciendo millones de dolares")){
   if (!isGroup) return
@@ -1406,40 +1346,33 @@ if (body.includes(`@${botNumber}`)){
 
   async function extraPlay(cArgs) {
     try {
-    if (args.length < 1) return reply('O que você deseja procurar?')
+    if (args.length < 1) return reply('Que quieres buscar?')
     teks = cArgs
     if (!teks.endsWith("-doc")){
     res = await yts(`${teks}`).catch(e => {
-    reply('_[ ! ] O erro de consulta inserido não existe_')
+    reply('_[ ! ] Error de consulta ingresado no existe_')
     })
     let thumbInfo = `「  *Youtube Play*  」
-
     🎶 *Título*: ${res.all[0].title}
-
     ✅ *ID:* ${res.all[0].videoId}
-
-    📅 *Carregado em:* ${res.all[0].ago}
-
-    📢 *Visualizações:* ${res.all[0].views}
-
-    🕓 *Duração:* ${res.all[0].timestamp}
-
+    📅 *Cargado en:* ${res.all[0].ago}
+    📢 *Visualizaciones:* ${res.all[0].views}
+    🕓 *Duración:* ${res.all[0].timestamp}
     📀 *Canal:* ${res.all[0].author.name}
+    ✅ *Link del canal:* ${res.all[0].author.url}
 
-    ✅ *Link do canal:* ${res.all[0].author.url}
-
-    *_Aguarde o processo de upload....._*
+    *_Espere el proceso de carga....._*
     `
     sendFileFromUrl(res.all[0].image, image, {quoted: choute, caption: thumbInfo})
     res = await y2mateA(res.all[0].url).catch(e => {
-    reply('_[ ! ] Erro ao entrar no Y2mate Web * Tente repetir*_')
+    reply('_[ ! ] Error al ingresar a Y2mate Web *Intenta repetir*_')
     })
     sendFileFromUrl(res[0].link, audio, {quoted: choute, mimetype: 'audio/mp4', filename: res[0].output})
     }
     if (teks.endsWith("-doc")){
     const tec = teks.split("-doc")
     res = await yts(`${tec}`).catch(e => {
-    reply('_[ ! ] O erro de consulta inserido não existe_')
+    reply('_[ ! ] O El error de consulta ingresado no existe_')
     })
     let thumbInfo = `❒「  *${yo}*  」
     ├ *Título :* ${res.all[0].title}
@@ -1450,17 +1383,17 @@ if (body.includes(`@${botNumber}`)){
     ├ *Canal :* ${res.all[0].author.name}
     └ *Link do canal :* ${res.all[0].author.url}
 
-    *_Aguarde o processo de download ...._*
+    *_Espere el proceso de descarga...._*
     `
     sendFileFromUrl(res.all[0].image, image, {quoted: choute, caption: thumbInfo})
     res = await y2mateA(res.all[0].url).catch(e => {
-    reply('_[ ! ] Erro ao entrar no Y2mate Web * Tente repetir*_')
+    reply('_[ ! ] Error al ingresar a Y2mate Web *Intenta repetir*_')
     })
     sendFileFromUrl(res[0].link, document, {quoted: choute, mimetype: 'audio/mp3', filename: res[0].output})
     }
     } catch(e) {
     console.log(e);
-    reply(`A solicitação faiou :/`)
+    reply(`La solicutud a fallado :/`)
     }
     }
   //AUTOSTICKER
@@ -1468,30 +1401,7 @@ if (body.includes(`@${botNumber}`)){
   //NO COMPLETADOS | TEST | PRUEBAS
 switch (command){
   //𝐍𝐨 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐚𝐝𝐨𝐬
-
-
-
-case 'quita':
-
-
-
-
-case 'agif':
-                            agif = isQuotedSticker ? JSON.parse(JSON.stringify(choute).replace('quotedM','m')).message.extendedTextMessage.contextInfo : choute
-                            reply('*Espera un momento...*')
-                            owgig = await leo.downloadAndSaveMediaMessage(agif)
-                            var rang = getRandom('.gif')
-                            exec(`ffmpeg -i ${owgig} ${rang}`, (err) => {
-                            fs.unlinkSync(owgig)
-                            if (err) return reply('error')
-                            toptg = fs.readFileSync(rang)
-                            leo.sendMessage(from, toptg, MessageType.gif, {mimetype: 'video/gif', quoted: faud})
-                            })
-                            break
-
-
-
-      case 'trap':
+  case 'trapitoxxx':
         trapx = await axios.get('https://nekos.life/api/v2/img/tits')
         traps = await getBuffer(trapx.data.url)
         leo.sendMessage(from, traps, image, { quoted: choute })
@@ -1499,7 +1409,7 @@ case 'agif':
         return('Intentalo nuevamente..')
         })
         break
-  case 'pat':
+  case 'muybien':
         ranp = getRandom('.gif')
         rano = getRandom('.webp')
         anu = await axios.get('https://nekos.life/api/v2/img/pat')
@@ -1685,8 +1595,8 @@ case 'gpbot':
                 reply(baby)
                 break
 
-case 'd':
-case 'del':
+case 'borrar':
+case 'delete':
                 if (isBan) return leoply  (baby.only.benned)
                 if (!isGroup)return reply(baby.only.group)
                 try {
@@ -1760,18 +1670,11 @@ teks =
     "forwardingScore": 508, "isForwarded": true}})
   break
 
-case 'level':
-case 'nivel':
-            if (!isRegister) return leoply(baby.only.usrReg)
-            if (isBan) return leoply  (baby.only.benned)
-            leo.sendMessage(from,  `${nivel}`, MessageType.text, {quoted: choute, contextInfo: { mentionedJid: [sender]}})
-            break
-
 case 'wa.me':
 case 'wame':
                 if (!isRegister) return leoply(baby.only.usrReg)
                 if (isBan) return leoply  (baby.only.benned)
-                if (args.length < 1) return reply('Escribe el numero del usuario para general el link, mencionalo o etiqueta un mensaje de el')
+                if (args.length < 1) return reply('Escribe el numero del usuario para general el link y/o mencionalo')
                 try {
                 ppimg = await leo.getProfilePicture(`${mentionUser.split('@')[0]}@c.us`)
                 } catch {
@@ -1779,8 +1682,7 @@ case 'wame':
                 }
                 its = await getBuffer (ppimg)
                 leo.sendMessage(from,
-                `Link de WhatsApp`+ args.join(' '), text,  {quoted: choute, caption: teks, contextInfo: { mentionedJid: [sender],
-                  "forwardingScore": 508, "isForwarded": true}})
+                `Link de WhatsApp wa.me/`+ args.join(' '), text,  {quoted: choute, caption: teks, contextInfo: { mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true}})
                 break
 
 case 'milink':
@@ -2097,6 +1999,7 @@ case 'desilenciar':
 
 //JUEGOS | ENTRETENIMIENTO
 case 'vor':
+case 'verdadoreto':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)
             txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n𝗩𝗘𝗥𝗗𝗔𝗗: .v r\n𝗥𝗘𝗧𝗢: .r v`
@@ -2246,24 +2149,6 @@ _*El archivo se esta enviando.*_
                 addFilter(from)
                 addLevelingLevel(sender, 5)
                 break
-case 'google':
-  if (!isRegister) return leoply(baby.only.usrReg)
-  if (isBan) return leoply  (baby.only.benned)
-              let buscar = args.join(' ')
-              if (!buscar) return reply('Que deseas buscar?')
-              let search = await LeoGg({ query: buscar })
-              let ggsm = ``
-              for (let i of search) {
-              ggsm += `
-*Titulo :* ${i.title}
-*Link :* ${i.link}
-*Contenido :* ${i.snippet}
-`
-              }
-              var babygg = ggsm.trim()
-              reply(`*🔍Busqueda realizada por* ${yo} \n\n${babygg}`)
-              addFilter(from)
-              break
 
 case 'fb':
             if (!q) return reply('y el link?')
@@ -2446,24 +2331,6 @@ case 'menu':
                 reply('Cargando menu, porfavor espera.\n\nNo hagas spam de comandos')
                 leo.sendMessage(from, fs.readFileSync('./media/imagen/fakae.png'), image, {caption: `${entrete}`, quoted: chr, contextInfo: { mentionedJid: [sender,ownerNumber]}})
                 break
-  case 'extra':
-    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${extra}\n\n\nCreador es ᏝʊፈħᎥƚσ`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
-    //"footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/cosplay/25.jpg'),
-    leo.relayWAMessage(fansh)
-    break
-  case 'creditos':
-  txtt = `${agra}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Grupo de WhatsApp'},type:1},]
-    imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/TikTok.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-    buttonsMessage = {
-    contentText: `${txtt}`,
-    footerText: '© Creator ░▒▓█►─═ ᏝʊፈħᎥƚσ ═─◄█▓▒░', imageMessage: imageMsg,
-    buttons: buttons1,
-    headerType: 4}
-    prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: chr })
-    leo.relayWAMessage(prep)
-    break
-
 //════════════════════════════════════════ LOGOS ════════════════════════════════
 
 
@@ -3034,7 +2901,7 @@ case 'aimg':
                   if (isBan) return leoply  (baby.only.benned)
                           if (!isQuotedSticker) return reply(`Etiqueta un sticker que no sea de movimienyo`)
                           if (choute.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
-                          reply(`Este comando solo sirve con stikers estaticos, para convertir un stiker a gif, usa: ${prefix}agif`)
+                          reply(`Este comando solo sirve con stikers estaticos`)
                           } else {
                           var media1 = JSON.parse(JSON.stringify(choute).replace('quotedM','m')).message.extendedTextMessage.contextInfo
                           var media2 = await leo.downloadAndSaveMediaMessage(media1)
@@ -3172,7 +3039,7 @@ case 'antilinkwsp':
   reply('Desactivar con éxito ✔️')
   } else {reply('Escribe on para activar o off para desactivar')}
   break
-
+/*
 case 'autostick':
 case 'autosticker':            
                     if (!isGroup) return leoply(baby.only.group)
@@ -3193,7 +3060,7 @@ case 'autosticker':
                       reply('1 para activar, off para desactivar')        
                     }                          
                     break
-
+*/
 case 'grupo':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
@@ -3213,7 +3080,7 @@ case 'grupo':
             reply(`Que quieres hacer?: ${prefix}${command} abrir/cerrar`)
             }
             break
-case 'kick':
+/*case 'kick':
 case 'eliminar':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
@@ -3224,7 +3091,7 @@ case 'eliminar':
             leo.sendMessage (from, `@${mentionUser[0].split('@')[0]} Seras eliminado de grupo, gracia por tu atencion`, text, {contextInfo: { mentionedJid: [mentionUser]}})
             leo.groupRemove(from, mentionUser) 
             break
-
+*/
 case 'nombre':
 case 'newnombre':
 case 'changename':
@@ -3266,9 +3133,9 @@ case 'hidetag':
 
 case 'miembros':
 case 'todos':
-case 'tangall':
 case 'tagall':
-case 'alltang':
+case 'listall':
+case 'alltag':
 case 'xd':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
@@ -3339,7 +3206,8 @@ case 'enlace':
 case 'listadmins':
 case 'listadmin':
 case 'adminlist':
-case 'adminslist': 
+case 'adminslist':
+case 'administradores':  
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
