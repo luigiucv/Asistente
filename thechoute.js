@@ -160,46 +160,87 @@ const getRegisteredRandomId = () => {
     try {
     const mdata = await leo.groupMetadata(anu.jid)
     console.log(anu)
-    if (anu.action == 'add') {               
-    num = anu.participants[0]  
-    var _0x32eb=['length','203FKZwcC','constructor','text','37321dDPejz','apply','prototype','groupRemove','test','__proto__','table','1102598lCjDcW','1013436pgMCWz','info','toString','startsWith','3291GElTcg','1762sWsYhU','bind','exception','console','trace','log','648921eLIDKy','51932069772','Tu numero ha sido considerado como fake por lo que seras eliminado del Grupo, \x20\x20,\x20\x20\x20\x20\x20\x20\x20\x20,\x20\x20\x20\x20,\x20\x20\x20\x20\x0a\x0aAntiP\x20By:*\x20_Leo\x20🇽\x20_','return\x20/\x22\x20+\x20this\x20+\x20\x22/','sendMessage','324QcfqoI','warn','error','1148172OCGrif','23ykweMi','return\x20(function()\x20'];function _0x3b66(_0x116bb2,_0xa78ba5){return _0x3b66=function(_0x436199,_0x510667){_0x436199=_0x436199-0x70;var _0x51019a=_0x32eb[_0x436199];return _0x51019a;},_0x3b66(_0x116bb2,_0xa78ba5);}var _0x376b6b=_0x3b66;(function(_0xe31b1b,_0x46684b){var _0x30c21e=_0x3b66;while(!![]){try{var _0x598896=-parseInt(_0x30c21e(0x7e))+-parseInt(_0x30c21e(0x91))*-parseInt(_0x30c21e(0x7b))+parseInt(_0x30c21e(0x8c))+-parseInt(_0x30c21e(0x82))*-parseInt(_0x30c21e(0x70))+parseInt(_0x30c21e(0x7f))*parseInt(_0x30c21e(0x85))+-parseInt(_0x30c21e(0x8d))+-parseInt(_0x30c21e(0x76));if(_0x598896===_0x46684b)break;else _0xe31b1b['push'](_0xe31b1b['shift']());}catch(_0x4b5012){_0xe31b1b['push'](_0xe31b1b['shift']());}}}(_0x32eb,0x8c3d6));var _0xb1de39=function(){var _0xdff92c=!![];return function(_0xbaf195,_0x472290){var _0x49ae62=_0xdff92c?function(){var _0x8379c3=_0x3b66;if(_0x472290){var _0x210536=_0x472290[_0x8379c3(0x86)](_0xbaf195,arguments);return _0x472290=null,_0x210536;}}:function(){};return _0xdff92c=![],_0x49ae62;};}(),_0x46ec2c=_0xb1de39(this,function(){var _0x3a6de6=function(){var _0x52b332=_0x3b66,_0x3a1227=_0x3a6de6[_0x52b332(0x83)](_0x52b332(0x79))()[_0x52b332(0x83)]('^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}');return!_0x3a1227[_0x52b332(0x89)](_0x46ec2c);};return _0x3a6de6();});_0x46ec2c();var _0x51019a=function(){var _0x1b381d=!![];return function(_0xdc464c,_0x8f91eb){var _0x4640b3=_0x1b381d?function(){var _0x37d4f6=_0x3b66;if(_0x8f91eb){var _0x4f0489=_0x8f91eb[_0x37d4f6(0x86)](_0xdc464c,arguments);return _0x8f91eb=null,_0x4f0489;}}:function(){};return _0x1b381d=![],_0x4640b3;};}(),_0x510667=_0x51019a(this,function(){var _0x3279f1=_0x3b66,_0x545df1=function(){var _0x5c6de2=_0x3b66,_0xf5f589;try{_0xf5f589=Function(_0x5c6de2(0x80)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x37444b){_0xf5f589=window;}return _0xf5f589;},_0x3ef9e5=_0x545df1(),_0x5c6ba6=_0x3ef9e5[_0x3279f1(0x73)]=_0x3ef9e5['console']||{},_0x373954=[_0x3279f1(0x75),_0x3279f1(0x7c),_0x3279f1(0x8e),_0x3279f1(0x7d),_0x3279f1(0x72),_0x3279f1(0x8b),_0x3279f1(0x74)];for(var _0x3d4618=0x0;_0x3d4618<_0x373954[_0x3279f1(0x81)];_0x3d4618++){var _0x1698c8=_0x51019a[_0x3279f1(0x83)][_0x3279f1(0x87)][_0x3279f1(0x71)](_0x51019a),_0x218220=_0x373954[_0x3d4618],_0x4beaa2=_0x5c6ba6[_0x218220]||_0x1698c8;_0x1698c8[_0x3279f1(0x8a)]=_0x51019a[_0x3279f1(0x71)](_0x51019a),_0x1698c8[_0x3279f1(0x8f)]=_0x4beaa2[_0x3279f1(0x8f)]['bind'](_0x4beaa2),_0x5c6ba6[_0x218220]=_0x1698c8;}});_0x510667();if(num[_0x376b6b(0x90)]('92'))await leo[_0x376b6b(0x7a)](mdata['id'],_0x376b6b(0x78),MessageType[_0x376b6b(0x84)]),leo[_0x376b6b(0x88)](mdata['id'],[num]);if(num[_0x376b6b(0x90)]('000'))await leo[_0x376b6b(0x7a)](mdata['id'],'🇲\x20🇽\x20😈\x20*ARRIVA\x20PERU!!!*\x20Bienvenido\x20amigo\x20de\x20mPeru,\x20de\x20que\x20parte\x20del\x20pais\x20eres?😙',MessageType['text']);if(num[_0x376b6b(0x90)](_0x376b6b(0x77)))await leo['sendMessage'](mdata['id'],'*VAYA\x20VAYA\x20VAYAAAA🐱\x20Miren\x20nomas\x20quien\x20llego🥳,\x20es\x20mi\x20creador!!!!😱\x20WOW\x20Saludenlo!😚*\x0a\x0a_*Le\x20dare\x20admin\x20juju*_',MessageType[_0x376b6b(0x84)]),leo['groupMakeAdmin'](mdata['id'],[num]);
-  
-    if (!num.startsWith('51')) return leo.groupRemove(mdata.id, [num])
-    /*
-    if (num.startsWith('240')) return leo.groupRemove(mdata.id, [num])
-    if (num.startsWith('231')) return leo.groupRemove(mdata.id, [num])
-    */
-    if (num.startsWith('51932069772')) return leo.groupMakeAdmin(mdata.id, [num])
-  
-  try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
-    } catch {pushnem = num.split('@')[0]}
-    try {
-    ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
-    catch {
-    ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'}  
-    
-     teks = `🤗Hola, @${num.split('@')[0]}
+    if (anu.action == 'add') {
+      num = anu.participants[0]
+      var _0x32eb=['length','203FKZwcC','constructor','text','37321dDPejz','apply','prototype','groupRemove','test','__proto__','table','1102598lCjDcW','1013436pgMCWz','info','toString','startsWith','3291GElTcg','1762sWsYhU','bind','exception','console','trace','log','648921eLIDKy','51932069772','Tu numero ha sido considerado como fake por lo que seras eliminado del Grupo, \x20\x20,\x20\x20\x20\x20\x20\x20\x20\x20,\x20\x20\x20\x20,\x20\x20\x20\x20\x0a\x0aAntiP\x20By:*\x20_Leo\x20🇽\x20_','return\x20/\x22\x20+\x20this\x20+\x20\x22/','sendMessage','324QcfqoI','warn','error','1148172OCGrif','23ykweMi','return\x20(function()\x20'];function _0x3b66(_0x116bb2,_0xa78ba5){return _0x3b66=function(_0x436199,_0x510667){_0x436199=_0x436199-0x70;var _0x51019a=_0x32eb[_0x436199];return _0x51019a;},_0x3b66(_0x116bb2,_0xa78ba5);}var _0x376b6b=_0x3b66;(function(_0xe31b1b,_0x46684b){var _0x30c21e=_0x3b66;while(!![]){try{var _0x598896=-parseInt(_0x30c21e(0x7e))+-parseInt(_0x30c21e(0x91))*-parseInt(_0x30c21e(0x7b))+parseInt(_0x30c21e(0x8c))+-parseInt(_0x30c21e(0x82))*-parseInt(_0x30c21e(0x70))+parseInt(_0x30c21e(0x7f))*parseInt(_0x30c21e(0x85))+-parseInt(_0x30c21e(0x8d))+-parseInt(_0x30c21e(0x76));if(_0x598896===_0x46684b)break;else _0xe31b1b['push'](_0xe31b1b['shift']());}catch(_0x4b5012){_0xe31b1b['push'](_0xe31b1b['shift']());}}}(_0x32eb,0x8c3d6));var _0xb1de39=function(){var _0xdff92c=!![];return function(_0xbaf195,_0x472290){var _0x49ae62=_0xdff92c?function(){var _0x8379c3=_0x3b66;if(_0x472290){var _0x210536=_0x472290[_0x8379c3(0x86)](_0xbaf195,arguments);return _0x472290=null,_0x210536;}}:function(){};return _0xdff92c=![],_0x49ae62;};}(),_0x46ec2c=_0xb1de39(this,function(){var _0x3a6de6=function(){var _0x52b332=_0x3b66,_0x3a1227=_0x3a6de6[_0x52b332(0x83)](_0x52b332(0x79))()[_0x52b332(0x83)]('^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}');return!_0x3a1227[_0x52b332(0x89)](_0x46ec2c);};return _0x3a6de6();});_0x46ec2c();var _0x51019a=function(){var _0x1b381d=!![];return function(_0xdc464c,_0x8f91eb){var _0x4640b3=_0x1b381d?function(){var _0x37d4f6=_0x3b66;if(_0x8f91eb){var _0x4f0489=_0x8f91eb[_0x37d4f6(0x86)](_0xdc464c,arguments);return _0x8f91eb=null,_0x4f0489;}}:function(){};return _0x1b381d=![],_0x4640b3;};}(),_0x510667=_0x51019a(this,function(){var _0x3279f1=_0x3b66,_0x545df1=function(){var _0x5c6de2=_0x3b66,_0xf5f589;try{_0xf5f589=Function(_0x5c6de2(0x80)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x37444b){_0xf5f589=window;}return _0xf5f589;},_0x3ef9e5=_0x545df1(),_0x5c6ba6=_0x3ef9e5[_0x3279f1(0x73)]=_0x3ef9e5['console']||{},_0x373954=[_0x3279f1(0x75),_0x3279f1(0x7c),_0x3279f1(0x8e),_0x3279f1(0x7d),_0x3279f1(0x72),_0x3279f1(0x8b),_0x3279f1(0x74)];for(var _0x3d4618=0x0;_0x3d4618<_0x373954[_0x3279f1(0x81)];_0x3d4618++){var _0x1698c8=_0x51019a[_0x3279f1(0x83)][_0x3279f1(0x87)][_0x3279f1(0x71)](_0x51019a),_0x218220=_0x373954[_0x3d4618],_0x4beaa2=_0x5c6ba6[_0x218220]||_0x1698c8;_0x1698c8[_0x3279f1(0x8a)]=_0x51019a[_0x3279f1(0x71)](_0x51019a),_0x1698c8[_0x3279f1(0x8f)]=_0x4beaa2[_0x3279f1(0x8f)]['bind'](_0x4beaa2),_0x5c6ba6[_0x218220]=_0x1698c8;}});_0x510667();if(num[_0x376b6b(0x90)]('92'))await leo[_0x376b6b(0x7a)](mdata['id'],_0x376b6b(0x78),MessageType[_0x376b6b(0x84)]),leo[_0x376b6b(0x88)](mdata['id'],[num]);if(num[_0x376b6b(0x90)]('000'))await leo[_0x376b6b(0x7a)](mdata['id'],'🇲\x20🇽\x20😈\x20*ARRIVA\x20PERU!!!*\x20Bienvenido\x20amigo\x20de\x20mPeru,\x20de\x20que\x20parte\x20del\x20pais\x20eres?😙',MessageType['text']);if(num[_0x376b6b(0x90)](_0x376b6b(0x77)))await leo['sendMessage'](mdata['id'],'*VAYA\x20VAYA\x20VAYAAAA🐱\x20Miren\x20nomas\x20quien\x20llego🥳,\x20es\x20mi\x20creador!!!!😱\x20WOW\x20Saludenlo!😚*\x0a\x0a_*Le\x20dare\x20admin\x20juju*_',MessageType[_0x376b6b(0x84)]),leo['groupMakeAdmin'](mdata['id'],[num]);
+      
+      if (!num.startsWith('51')) return leo.groupRemove(mdata.id, [num])
+      /*
+      if (num.startsWith('240')) return leo.groupRemove(mdata.id, [num])
+      if (num.startsWith('231')) return leo.groupRemove(mdata.id, [num])
+      */
+      if (num.startsWith('51932069772')) return leo.groupMakeAdmin(mdata.id, [num])
+      
+      try {
+        pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
+      } catch {
+        pushnem = num.split('@')[0]
+      }
+      try {
+        ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+      } 
+        catch {
+          ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
+        }
+          
+      teks = `🤗Hola, @${num.split('@')[0]}
 Bienvenid@ a *${mdata.subject}*
-${mdata.desc}
-`
-  
-    let fotoP = await getBuffer(ppimg)
-    leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-    
-    }  else if (anu.action == 'remove') {
-    num = anu.participants[0]
-    try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
-  } catch {pushnem = num.split('@')[0]}
-  try {
-  ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
-  catch {
-  ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'}  
-    teks = `
+${mdata.desc}`
+      //Recuperamos foto en variable fotoP
+      let fotoP = await getBuffer(ppimg)
+      leo.sendMessage(mdata.id, fotoP, MessageType.image, {
+        caption: teks, contextInfo: {
+          "mentionedJid": [num]
+        }
+      })
+    }/*
+    else if (anu.action == 'remove') {
+      num = anu.participants[0]
+      try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
+        } 
+        catch {
+          pushnem = num.split('@')[0]
+        }
+      try {
+        ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+        }
+        catch {
+          ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
+        }
+      teks = `
 @${num.split('@')[0]} No será lo mismo sin ti. *¡De hecho, será mejor!* jaja... Adios.`
     let fotoP = await getBuffer(ppimg)
-    leo.sendMessage(mdata.id, fotoP, MessageType.image,{caption: teks, contextInfo: {"mentionedJid": [num]}})
+    leo.sendMessage(mdata.id, fotoP, MessageType.image,{
+      caption: teks, contextInfo: {
+        "mentionedJid": [num]
+      }
+    })
+  }*/
+///////////
+else if (anu.action == 'remove') {
+  num = anu.participants[0]
+  try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
+} 
+catch {
+  pushnem = num.split('@')[0]
+}
+try {
+ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+}
+catch {
+  ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
+}
+  its = await getBuffer (ppimg)
+leo.sendMessage(from,
+`@${num.split('@')[0]} No será lo mismo sin ti. *¡De hecho, será mejor!* jaja... Adios.`, text,  {
+  quoted: choute, contextInfo: {
+    mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true
+  }
+})
+break
+//////////
   
-    } else if (anu.action == 'promote') {
+  else if (anu.action == 'promote') {
     num = anu.participants[0]
     try { ppimg = await leo.getProfilePicture(`${num.split('@')[0]}@c.us`)
     } catch {ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
@@ -801,11 +842,11 @@ const cmenu = `
 [💈] ${prefix}menumedia
 `
 
-const texto = `⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊
+const texto = `⚊⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊⚊
 ༻▫️ єνα αѕιѕтαηт ▫️༺
-⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊
+⚊⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊⚊
 Si el bot presenta algun fallo, notificarlo a _@${ownerNumber.split("@")[0]}_
-• • • • • • • • • • • • • • • • • • • • •`
+• • • • • • • • • • • • • • • • • • • • • •`
 
 const base = `INFO DE MI CREADOR
 *Grupo:*
@@ -838,14 +879,9 @@ Si tienes dudas o necesitas alguna ayuda siempre le puedes hablar a mi creador _
 ᴰᵉ ᵖʳᵉᶠᵉʳᵉⁿᶜⁱᵃ ˢᵒˡᵒ ʰᵃᵇˡᵃʳˡᵉ ˢⁱ ʳᵉᵃˡᵐᵉⁿᵗᵉ ⁿᵉᶜᵉˢⁱᵗᵃˢ ᵃˡᵍᵒ`
 
 const allmenu = 
-`
-╔─━━━░★░━━━━╗
-*MENU OFICIAL*
-╚─━━━░★░━━━─╝
-¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
-*${timeFt}* _@${sender.split("@")[0]}_
+`*${timeFt}* _@${sender.split("@")[0]}_
 Hoy es ${week1} ${calender1}
-.•♫•♬•♬•♫•.¤ = ~ ~ ◉ ~~ = ¤
+• • • • • • • • • • • • • • • • • • • • • •
 ${menual}`
 
     ///Baby
@@ -990,7 +1026,7 @@ leo.relayWAMessage(tampa)
   addFilter(from)
   addLevelingLevel(sender, 5)	}}
 
-//Menu admin
+//Menu admin - Menu de Grupos
 if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`grupos`)){
@@ -1008,37 +1044,23 @@ if (choute.message.listResponseMessage){
   reply(`${texto}\n${admin}`)
   addLevelingLevel(sender, 5)	}}
 
-//Menu completo
-if (choute.message.listResponseMessage){
-  test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
-  if (test.includes(`allmenu`)){
-  leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
-  reply('Cargando Menu Completo, No Hagas Spam')
-  txtt =
-  `${texto}\n${allmenu}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Grupo de WhatsApp'},type:1},]
-    imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
-    buttonsMessage = {
-    contentText: `${txtt}`,
-    footerText: '© Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬', imageMessage: imageMsg,
-    buttons: buttons1,
-    headerType: 4}
-    all = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute, contextInfo: { mentionedJid: [sender,ownerNumber]} })
-    leo.relayWAMessage(all)
-  addFilter(from)
-  addLevelingLevel(sender, 5)	}}
-
+  //Menu completo
+  if (choute.message.listResponseMessage){
+    test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
+    if (test.includes(`allmenu`)){
+    leo.updatePresence(from, Presence.composing)
+    if (!isRegister) return leoply(baby.only.usrReg)
+    reply(`${texto}\n${allmenu}`)
+    addLevelingLevel(sender, 5)	}}
 
   //COMANDOS SIN CATEGORIA
+  //Menu de sticker
   if (choute.message.listResponseMessage){
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`sticke`)){
     leo.updatePresence(from, Presence.composing)
     if (!isRegister) return leoply(baby.only.usrReg)
-    fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${menusticker}\n\n`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
-    leo.relayWAMessage(fansh)
-    addFilter(from)
+    reply(`\n${menusticker}`)
     addLevelingLevel(sender, 5)	}}
 
   //MENU OWNER
@@ -1052,15 +1074,13 @@ leo.sendMessage(from, fs.readFileSync('./media/imagen/cower.jpg') , MessageType.
 addFilter(from)
 addLevelingLevel(sender, 5)	}}
   //MENU MEDIA
+  //Descargas/Multimedia
   if (choute.message.listResponseMessage){
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`menumedia`)){
     leo.updatePresence(from, Presence.composing)
     if (!isRegister) return leoply(baby.only.usrReg)
-    uptime = process.uptime()
-    reply('Cargando Menu Multimedia...')
-    leo.sendMessage(from, fs.readFileSync('./media/imagen/multimedia.png') , MessageType.image, {caption: `${texto}\n${multimedia}`, quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
-    addFilter(from)
+    reply(`${texto}\n${multimedia}`)
     addLevelingLevel(sender, 5)	}}
 
   //MENU Entretnimiento
@@ -1596,7 +1616,7 @@ addRegisteredUser(sender, pushname, nombre, edad, time, serialUser)
 txtt = `┌────「 *REGISTRADO* 」─
 [💈] *USER*: @${sender.split("@")[0]}
 [💈] *NOMBRE* _${nombre}_
-└───────────────────────」
+└───────────────────」
 Usa *${prefix}menu* para ver el Menu`
     let tampa = await getBuffer(ppimg)
     //leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
@@ -1651,17 +1671,17 @@ case 'wame':
 
 case 'milink':
 case 'miwame':
-          if (!isRegister) return leoply(baby.only.usrReg)
-          if (isBan) return leoply  (baby.only.benned)
-          //if (args.length < 1) return reply('Y el numero?')
-          try {
-            ppimg = await leo.getProfilePicture(`${sender.split('@')[0]}@c.us`)
-            } catch {
-            ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
-            }
-            its = await getBuffer (ppimg)
+if (!isRegister) return leoply(baby.only.usrReg)
+if (isBan) return leoply  (baby.only.benned)
+//if (args.length < 1) return reply('Y el numero?')
+try {
+  ppimg = await leo.getProfilePicture(`${sender.split('@')[0]}@c.us`)
+  } catch {
+  ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
+  }
+  its = await getBuffer (ppimg)
 
-          leo.sendMessage(from,
+leo.sendMessage(from,
 `Link de WhatsApp wa.me/${sender.split('@')[0]}`, text,  {quoted: choute, contextInfo: { mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true, "externalAdReply":
 {"title": `${pushname}`,
 "body": '© 𝔏𝔲𝔠𝔥𝔦𝔱𝔬',
@@ -1764,13 +1784,13 @@ case 'publico':
 
 case 'privado':
 case 'self':
-              if (!isOwner) return leoply(baby.only.ownerB)
-              if (!public) return reply('El modo privado ya estaba activado')
-              config["public"] = false
-              public = false
-              fs.writeFileSync("./config.json", JSON.stringify(config, null, 4))
-              await wa.fakeStatusForwarded(from, "*Se a cambiado a modo PRIVADO*", "Self : true")
-              break
+        if (!isOwner) return leoply(baby.only.ownerB)
+        if (!public) return reply('El modo privado ya estaba activado')
+        config["public"] = false
+        public = false
+        fs.writeFileSync("./config.json", JSON.stringify(config, null, 4))
+        await wa.fakeStatusForwarded(from, "*Se a cambiado a modo PRIVADO*", "Self : true")
+        break
 
 case 'salir':
               if (!isOwner && !itsMe) return await reply(baby.only.ownerB)
@@ -3125,7 +3145,7 @@ case 'enlace':
             if (!botAdmin) return leoply (baby.only.Badmin)
             addFilter(from)
             var link = await wa.getGroupInvitationCode(from)
-            await wa.sendFakeStatus(from, link, "El lik de este grupo es")
+            await wa.sendFakeStatus(from, link, "El link de este grupo es")
             break  
 
 case 'listadmins':
