@@ -193,7 +193,8 @@ ${mdata.desc}`
           "mentionedJid": [num]
         }
       })
-    }/*
+    }
+    /*
     else if (anu.action == 'remove') {
       num = anu.participants[0]
       try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
@@ -215,7 +216,8 @@ ${mdata.desc}`
         "mentionedJid": [num]
       }
     })
-  }*/
+  }
+  */
 ///////////
 else if (anu.action == 'remove') {
   num = anu.participants[0]
@@ -237,7 +239,7 @@ leo.sendMessage(from,
     mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true
   }
 })
-break
+}
 //////////
   
   else if (anu.action == 'promote') {
