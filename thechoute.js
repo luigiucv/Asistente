@@ -234,10 +234,10 @@ catch {
 }
   let its = await getBuffer (ppimg)
 leo.sendMessage(from,
-`@${num.split('@')[0]} No será lo mismo sin ti. *¡De hecho, será mejor!* jaja... Adios.`, text,  {
+`No será lo mismo sin ti. *¡De hecho, será mejor!* jaja... Adios.`, text,  {
   quoted: choute, contextInfo: {
     mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true, "externalAdReply":
-    {"title": `${pushname}`,
+    {"title": `𝐃𝐞𝐬𝐩𝐞𝐝𝐢𝐝𝐚`,
     "body": 'ₙₒₛ ᵥₑₘₒₛ ₚᵣₒₙₜₒ',
     "thumbnail": its,
     "sourceUrl": `https://api.whatsapp.com/send/?phone=${sender.split('@')[0]}`}
