@@ -70,7 +70,7 @@ const { reglas, logos } = require ('./lib/reglas')
 const {janza, janz, menuall, qmiembros, brillo, choute, cnal} = require ('./lib/baby.js')
 //const {bechoso} = require ('./lib/exportaciones/bechoso')
 const { vor } = require ('./lib/baby/vor')
-const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z } = require ('./lib/baby/verdad')
+const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, BB, CC, DD, FF, GG, HH, II, JJ } = require ('./lib/baby/verdad')
 const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 //const { linkgp } = require ('./lib/exportaciones/linkgp')
