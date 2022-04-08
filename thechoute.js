@@ -950,7 +950,7 @@ if (test.includes(`nuevo`)){
     if (choute.message.buttonsResponseMessage){
       test = choute.message.buttonsResponseMessage.selectedButtonId
       if (test.includes(`mlq`)){
-        if (!isRegister) return leoply(baby.only.usrReg)
+        //if (!isRegister) return leoply(baby.only.usrReg)
         let lista = leo.prepareMessageFromContent(from,{
         "listMessage": {
         "description": `${menue}`,
@@ -1026,7 +1026,7 @@ if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`recomendaciones`)){
   leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
 tampa = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "message": `${reglas}`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/imgregla.jpg'), "surface": 'CATALOG' }}, {contextInfo: { mentionedJid: [sender,ownerNumber]}, quoted:choute, })
 leo.relayWAMessage(tampa)
   addFilter(from)
@@ -1037,7 +1037,7 @@ if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`grupos`)){
   leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   reply(`${texto}\n${grupos}`)
   addLevelingLevel(sender, 5)	}}
 
@@ -1046,7 +1046,7 @@ if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`admin`)){
   leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   reply(`${texto}\n${admin}`)
   addLevelingLevel(sender, 5)	}}
 
@@ -1055,7 +1055,7 @@ if (choute.message.listResponseMessage){
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`allmenu`)){
     leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     reply(`${texto}\n${allmenu}`)
     addLevelingLevel(sender, 5)	}}
 
@@ -1074,7 +1074,7 @@ if (choute.message.listResponseMessage){
 test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
 if (test.includes(`menuowner`)){
 leo.updatePresence(from, Presence.composing)
-if (!isRegister) return leoply(baby.only.usrReg)
+//if (!isRegister) return leoply(baby.only.usrReg)
 uptime = process.uptime()
 leo.sendMessage(from, fs.readFileSync('./media/imagen/cower.jpg') , MessageType.image, {caption: `${texto}\n${owener}`, quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
 addFilter(from)
@@ -1105,7 +1105,7 @@ addLevelingLevel(sender, 5)	}}
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`Logos`)){
     leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     uptime = process.uptime()
     leo.sendMessage(from, fs.readFileSync(`media/imagen/baby.png`), image, {quoted: choute, caption:`🔥 𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑳𝑶𝑮𝑶𝑺 🔥 \n${texto}\n${logos}`})
     addFilter(from)
@@ -2233,7 +2233,7 @@ case 'letracancion':
 case 'letras':
   if (isBan) return leoply  (baby.only.benned)
           if (args.length < 1) return reply('Escribe el nombre de la cancion')
-          if (!isRegister) return leoply(baby.only.usrReg)
+          //if (!isRegister) return leoply(baby.only.usrReg)
           leo.updatePresence(from, Presence.composing)
           if (!q) return reply('*Cual es el nombre de la cancion?*')
           try {
@@ -2268,7 +2268,7 @@ case 'voz':
 
 case 'meme':
                 leo.updatePresence(from, Presence.composing)
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 try {
                 beh = await getJson(`https://meme-api.herokuapp.com/gimme/memesmexico`)
                 pint = await getBuffer(`${beh.url}`)
@@ -2293,7 +2293,7 @@ case 'contacto':
 
 
 case 'contar':
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   if (isBan) return leoply  (baby.only.benned)
 addFilter(from)
 if (args.length == 0) return reply('0 caracteres!😀 NO HAY TEXTO PARA CONTAR!')
@@ -2311,7 +2311,7 @@ break
 case 'menu':
 //case 'a':
 
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 if (isBan) return leoply  (baby.only.benned)
                 reply('Cargando Menu, Porfavor no hacer spam de mensaje')
                txtt =`${cmenu}`
@@ -2330,7 +2330,7 @@ case 'menu':
                   case 'allmenu':
                   case 'menuall':
 
-                                if (!isRegister) return leoply(baby.only.usrReg)
+                                //if (!isRegister) return leoply(baby.only.usrReg)
                                 txtt =`${allmenu}`
                   txtt =
                   `${allmenu}`
