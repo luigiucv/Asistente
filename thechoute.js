@@ -717,7 +717,7 @@ leo.on('chat-update', async(choute) => {
 
 
       if (isOwner) {
-        var tipoDeUsr = '*🔮Ownwer*'
+        var tipoDeUsr = '*🔮Owner*'
         } else if (sender == isAdmin) {
           var tipoDeUsr = '*👑Admin*'
         } else {
@@ -1065,7 +1065,7 @@ if (choute.message.listResponseMessage){
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`sticke`)){
     leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     reply(`\n${menusticker}`)
     addLevelingLevel(sender, 5)	}}
 
@@ -1085,7 +1085,7 @@ addLevelingLevel(sender, 5)	}}
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`menumedia`)){
     leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     reply(`${texto}\n${multimedia}`)
     addLevelingLevel(sender, 5)	}}
 
@@ -1094,7 +1094,7 @@ addLevelingLevel(sender, 5)	}}
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`entrenimiento`)){
     leo.updatePresence(from, Presence.composing)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     uptime = process.uptime()
     fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${texto}\n${entrete}`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/izu.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender]}, quoted:choute, })
     leo.relayWAMessage(fansh)
@@ -1116,7 +1116,7 @@ if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`creador`)){
   leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   uptime = process.uptime()
   leo.sendMessage(from, `${infocreador}`, MessageType.text, {quoted: choute, contextInfo: { mentionedJid: [sender,ownerNumber]}})
 
@@ -1128,7 +1128,7 @@ if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`agradecimiento`)){
   leo.updatePresence(from, Presence.composing)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   uptime = process.uptime()
   txtt =
 `${agra}`
@@ -1153,7 +1153,7 @@ if (choute.message.buttonsResponseMessage){
     addFilter(from)
       addLevelingLevel(sender, 5)	}}
 
-
+/*
   if (choute.message.listResponseMessage){
     test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
     if (test.includes(`soluboton`)){
@@ -1168,6 +1168,7 @@ leo.sendMessage(from, `*SOLUCCION NO TE APARECEN LOS BOTONES EN LOS BOT DE WHATS
     addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
+
 if (choute.message.listResponseMessage){
   test = choute.message.listResponseMessage.singleSelectReply.selectedRowId
   if (test.includes(`install`)){
@@ -1177,12 +1178,12 @@ if (choute.message.listResponseMessage){
   leo.sendMessage(from, `${install}`, MessageType.text, {quoted: choute, contextInfo: { mentionedJid: [sender,ownerNumber]}})
   addFilter(from)
   addLevelingLevel(sender, 5)	}}
-
+*/
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`verdad`)){
   if (isBan) return leoply  (baby.only.benned)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
@@ -1193,13 +1194,13 @@ if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`reto`)){
   if (isBan) return leoply  (baby.only.benned)
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
-
+/*
     //LISTA
     if (choute.message.buttonsResponseMessage){
       test = choute.message.buttonsResponseMessage.selectedButtonId
@@ -1207,12 +1208,13 @@ if (test.includes(`reto`)){
 reply (`${agra}`)
         addFilter(from)
           addLevelingLevel(sender, 5)	}}
+*/
 //
 if (choute.message.buttonsResponseMessage){
   test = choute.message.buttonsResponseMessage.selectedButtonId
   if (test.includes(`listadmin`)){
     if (isBan) return leoply  (baby.only.benned)
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     if (!isGroup) return leoply(baby.only.group)
     adm = `*El grupo* *${groupMetadata.subject}*\nTiene ${groupAdmins.length} Administradores.\n\n`
     no = 0
@@ -1424,6 +1426,7 @@ switch (command){
           fs.unlinkSync(rano)
         })
         break
+ /*       
   case 'boobs':
         ranp = getRandom('.gif')
         rano = getRandom('.webp')
@@ -1436,7 +1439,7 @@ switch (command){
           fs.unlinkSync(rano)
         })
         break
-
+*/
   case 'clonar':
 if (!isGroup) return leoply(baby.only.group)
 if (args.length < 1) return reply('Etiqueta a alguien para utilizar su foto!!!')
@@ -1461,7 +1464,7 @@ case 'sticker':
 case 's':
 case 'stiker':
 case 'sticker':
-                        if (!isRegister) return leoply(baby.only.usrReg)
+                        //if (!isRegister) return leoply(baby.only.usrReg)
                         if (isBan) return leoply (baby.only.benned)
                         if (isMedia && !choute.message.videoMessage || isQuotedImage) {
                         const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(choute).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : choute
@@ -1490,7 +1493,7 @@ case 'sticker':
                         break
 
 case "attp":
-                        if (!isRegister) return leoply(baby.only.usrReg)
+                        //if (!isRegister) return leoply(baby.only.usrReg)
                         if (isBan) return leoply  (baby.only.benned)
                         if (args.length == 0) return reply(`Escribe la palabra con la cual devo hacer el sticker \n*Ejemplo: *${prefix + command} Hola`)
                         const stick = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
@@ -1534,7 +1537,7 @@ case 'tovideo':
 case 'owner':
 case 'creador':
                 if (isBan) return leoply  (baby.only.benned)
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 try {
                 ppimg = await leo.getProfilePicture(`${ownerNumber.split('@')[0]}@c.us`)
                 } catch {
@@ -1567,7 +1570,7 @@ case 'info':
 case 'estado':
 case 'infobot':
                 if (isBan) return leoply  (baby.only.benned)
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 try {
                 ppimg = await leo.getProfilePicture(`${botNumber.split('@')[0]}@c.us`)
                 } catch {
@@ -1581,14 +1584,14 @@ case 'ping':
 case 'velocidad':
                 leo.sendMessage(from, `Mi velocidad es ${process.uptime()}`, MessageType.text, {quoted: choute})
                 break
-
+/*
 case 'reglas':
                 if (isBan) return leoply  (baby.only.benned)
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 mreg = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "message": `${reglas}`, "footerText": "*𝕷𝖚𝖈𝖍𝖎𝖙𝖔*", "thumbnail": fs.readFileSync('./media/imagen/imgregla.jpg'), "surface": 'CATALOG' }}, {contextInfo: { mentionedJid: [sender,ownerNumber]}, quoted:choute, })
                 leo.relayWAMessage(mreg)
                 break
-
+*/
 case 'soporte':
 case 'support':
 case 'gpbot':
@@ -1662,7 +1665,7 @@ teks =
 
 case 'wa.me':
 case 'wame':
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 if (isBan) return leoply  (baby.only.benned)
                 if (args.length < 1) return reply('Escribe el numero del usuario para general el link y/o mencionalo')
                 try {
@@ -1677,7 +1680,7 @@ case 'wame':
 
 case 'milink':
 case 'miwame':
-if (!isRegister) return leoply(baby.only.usrReg)
+//if (!isRegister) return leoply(baby.only.usrReg)
 if (isBan) return leoply  (baby.only.benned)
 //if (args.length < 1) return reply('Y el numero?')
 try {
@@ -1805,7 +1808,7 @@ case 'salir':
               await help.sleep(3000)
               await leo.groupLeave(from)})
               break
-
+/*
 case 'anuncio':
 case 'difusion':
 case 'campaña':
@@ -1827,7 +1830,7 @@ case 'campaña':
               }
               reply('con éxito')}
               break
-
+*/
 case 'spam':
 case 'enviarspam':
             if (!isOwner) return leoply('Este comando solo puede der utilizado por mi')
@@ -1992,7 +1995,7 @@ case 'desilenciar':
 //JUEGOS | ENTRETENIMIENTO
 case 'vor':
 case 'verdadoreto':
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)
             txtt =`*𝗩erdad* o *𝗥eto*\nPresiona sobre un botón`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
@@ -2009,7 +2012,7 @@ case 'verdadoreto':
 
 case 'chiste':
             if (isBan) return leoply  (baby.only.benned)
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             respuesta = [`¿Sabes la diferencia entre el papel higiénico y las cortinas del baño? \n No. \n ¡Así que has sido tú!`, 
             `¿Cuál es el alimento más completo? \n El pene, porque tiene carne, leche, huevos y olor a pescado.`, 
             `Doctor, paciente ciego desea verlo. Dígale que no hago milagros.`, 
@@ -2079,7 +2082,7 @@ case 'chiste':
             break
 
 case 'top5':
-              if (!isRegister) return leoply(baby.only.usrReg)
+              //if (!isRegister) return leoply(baby.only.usrReg)
               if (isBan) return leoply  (baby.only.benned)
               addFilter(from)
           if (!isGroup) return reply('Top5 en un chat? Te gusta la pija cierto. Este comando es solo para grupos.')
@@ -2104,12 +2107,12 @@ member.push(o4.jid)
 member.push(o5.jid)
 mentions(teks, member, true)
 break
-
+/*
 case 'topgay':
 case 'rankgay':
 case 'rangay':
 
-              if (!isRegister) return leoply(baby.only.usrReg)
+              //if (!isRegister) return leoply(baby.only.usrReg)
               if (isBan) return leoply  (baby.only.benned)
               addFilter(from)
               if (!isGroup) return reply('Top5 en un chat? Te gusta la pija cierto. Este comando es solo para grupos.')
@@ -2123,9 +2126,9 @@ member.push(o4.jid)
 member.push(o5.jid)
 mentions(teks, member, true)
 break
-
+*/
 case 'pregunta':
-                  if (!isRegister) return leoply(baby.only.usrReg)
+                  //if (!isRegister) return leoply(baby.only.usrReg)
                   if (isBan) return leoply  (baby.only.benned)
                   respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Ai una probabilidad del 99.99999999991.01%', 'Puede que no', 'Yo que se', 'mmmm🤔.... Dejame lo pienso un poco']
                   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
@@ -2136,11 +2139,11 @@ case 'pregunta':
 
 //DESCARGAS | MULTIMEDIA
 case 'mfire':
-              if (!isRegister) return leoply(baby.only.usrReg)
+              //if (!isRegister) return leoply(baby.only.usrReg)
               if (isBan) return leoply  (baby.only.benned)
               if (args.length < 1) return reply('y el link?? ')
               if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply('Link invalido, el link debe ser de MediaFire')
-              reply('Pera dame un segundo')
+              reply('Pera dame un momento')
 teks = args.join(' ')
 const resm = await babyfire(teks)
 archivo = `  「  ${yo} 」
@@ -2152,6 +2155,7 @@ reply(archivo)
 sendFileFromUrl(resm[0].link, document, {mimetype: resm[0].mime, filename: resm[0].nombre, quoted: choute})
 addFilter(from)
 break
+
 //Musica Play 
 case 'play':
 if (!q) return reply(`_Escribe lo que quieres buscar_`)
@@ -2181,7 +2185,7 @@ break
 
 
 case 'ytmp4':
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 if (isBan) return leoply  (baby.only.benned)
                 if (args.length < 1) return reply('Y el link?')
                 if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Debes agregar el link de *YOUTUBE*')
@@ -2220,11 +2224,12 @@ case 'fb':
             })})
             break
 
-      /*47853094*/
-//NOSE
-
+//Letra de canciones
 case 'lirik':
+case 'lyrics':
+case 'lyric':
 case 'letra':
+case 'letracancion':
 case 'letras':
   if (isBan) return leoply  (baby.only.benned)
           if (args.length < 1) return reply('Escribe el nombre de la cancion')
@@ -2233,7 +2238,7 @@ case 'letras':
           if (!q) return reply('*Cual es el nombre de la cancion?*')
           try {
           anu = await getJson(`https://some-random-api.ml/lyrics?title=${q}`)
-          lyrics = `El resultado de ${anu.title}:\n\n*Autor:* ${anu.author}\n\n____________________\n\n${anu.lyrics}\n\n🌬Link: ${anu.links.genius}`
+          lyrics = `El resultado de ${anu.title}:\n\n*Autor:* ${anu.author}\n\n_______________________\n\n${anu.lyrics}\n\n🌬Link: ${anu.links.genius}`
           sendFileFromUrl(anu.thumbnail.genius, image, {quoted: choute, caption: lyrics, sendEphemeral: true})
           } catch {
           reply(baby.ferr)
@@ -2241,7 +2246,7 @@ case 'letras':
           addFilter(from)
           break
 
-
+/*
 case 'tts':
 case 'voz':
                 if (args.length < 1) return leo.sendMessage(from, 'Y el codigo de idioma? escribe el comando *idiomas* para ver la lista', text, { quoted: choute })
@@ -2259,7 +2264,7 @@ case 'voz':
                 })
                 addFilter(from)
                 break
-
+*/
 
 case 'meme':
                 leo.updatePresence(from, Presence.composing)
@@ -2319,12 +2324,7 @@ case 'menu':
                 leo.relayWAMessage(men)
                 break
 
-
-
-
-  //𝐋𝐢𝐬𝐭𝐚 𝐝𝐞 𝐌𝐞𝐧𝐮𝐬´
-
-
+  //𝐋𝐢𝐬𝐭𝐚 𝐝𝐞 𝐌𝐞𝐧𝐮𝐬
                 case 'menuofc':
                   case 'ofc':
                   case 'allmenu':
@@ -2376,7 +2376,7 @@ case 'menu':
 
 
   // -    -     -     - 𝐋𝐨𝐠𝐨𝐬 𝐁𝐲 𝔏𝔲𝔠𝔥𝔦𝔱𝔬 - - - -
-  /**/case 'neon':
+  /*case 'neon':
     if (!isRegister) return leoply(baby.only.usrReg)
 
   if (!q) return reply('*Y el texto para crear el logo donde esta?*')
@@ -2385,7 +2385,7 @@ case 'menu':
   sendFileFromUrl(logo, image, {quoted: choute, caption: '*🔥 𝐋𝐨𝐠𝐨𝐬 𝐁𝐲 𝔏𝔲𝔠𝔥𝔦𝔱𝔬 🔥*\n', sendEphemeral: true})
   break
 
-  /**/case 'matrix':
+  case 'matrix':
     if (!isRegister) return leoply(baby.only.usrReg)
 
   if (!q) return reply('*Y el texto para crear el logo donde esta?*')
@@ -2646,15 +2646,15 @@ case 'menu':
   logo = `https://api.zeks.me/api/gtext?apikey=FRPuR2WbwVlAI7rKYh16ypU9oxs&text1=${texto1}&text2=${texto2}`
   sendFileFromUrl(logo, image, {quoted: choute, caption: '*🔥 𝐋𝐨𝐠𝐨𝐬 𝐁𝐲 𝔏𝔲𝔠𝔥𝔦𝔱𝔬 🔥*\n', sendEphemeral: true})
   break
-
+*/
 
 
 //════════════════════════════════════════ MULTIMEDIA ════════════════════════════════
   //VIDEOS
 case 'reversa':
-  if (!isRegister) return leoply(baby.only.usrReg)
-    if (isBan) return leoply  (baby.only.benned)
-    if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
+  if (isBan) return leoply  (baby.only.benned)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   if (!isQuotedVideo) return reply('Porfavor etiqueta un video con el comando!')
   reply('*Espera un momento porfavor....*')
   encmediav = JSON.parse(JSON.stringify(choute).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -2671,7 +2671,7 @@ case 'reversa':
   break
 
   case 'vrapido':
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   if (isBan) return leoply  (baby.only.benned)
   if (!isQuotedVideo) return reply('*ETIQUETA UN VIDEO JUNTO CON EL COMANDO PORFAVOR!!*')
   reply(baby.wait)
@@ -2689,7 +2689,7 @@ case 'reversa':
   break
 
   case 'vlento':
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     if (isBan) return leoply  (baby.only.benned)
   if (!isQuotedVideo) return reply('*ETIQUETA UN VIDEO JUNTO CON EL COMANDO PORFAVOR!!*')
   reply(baby.wait)
@@ -2707,7 +2707,7 @@ case 'reversa':
   break
 
   case 'mirror':
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     if (isBan) return leoply  (baby.only.benned)
   if (!isQuotedVideo) return reply('*ETIQUETA UN VIDEO JUNTO CON EL COMANDO PORFAVOR!!*')
   reply(baby.wait)
@@ -2725,7 +2725,7 @@ case 'reversa':
   break
 
   case 'vefecto':
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     if (isBan) return leoply  (baby.only.benned)
   if (!isQuotedVideo) return reply('*ETIQUETA UN VIDEO JUNTO CON EL COMANDO PORFAVOR!!*')
   reply(baby.wait)
@@ -2743,7 +2743,7 @@ case 'reversa':
   break
 
   case 'sinsonido':
-    if (!isRegister) return leoply(baby.only.usrReg)
+    //if (!isRegister) return leoply(baby.only.usrReg)
     if (isBan) return leoply  (baby.only.benned)
   if (!isQuotedVideo) return reply('*ETIQUETA UN VIDEO JUNTO CON EL COMANDO PORFAVOR!!*')
   reply(baby.wait)
@@ -2920,7 +2920,8 @@ case 'reversa':
 
 //𝙄𝙈𝘼𝙂𝙀𝙉
 case 'imagen':
-              if (!isRegister) return leoply(baby.only.usrReg)
+case 'buscarimagen':
+              //if (!isRegister) return leoply(baby.only.usrReg)
               if (isBan) return leoply  (baby.only.benned)
               if (args.length < 1) return reply('Que deseas buscar?')
               reply(`Porfavor espera un momento mientras busco imagenes de ` + args.join(' '))
@@ -2938,7 +2939,11 @@ case 'imagen':
               break
 case 'toimg':
 case 'aimg':
-                  if (!isRegister) return leoply(baby.only.usrReg)
+case 'stickeraimagen':
+case 'stickertoimage':
+case 'stickertoimg':
+case 'stktoimg':
+                  //if (!isRegister) return leoply(baby.only.usrReg)
                   if (isBan) return leoply  (baby.only.benned)
                           if (!isQuotedSticker) return reply(`Etiqueta un sticker que no sea de movimiento`)
                           if (choute.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
@@ -2966,7 +2971,9 @@ case 'aimg':
                           break
 
 case 'wp':
-            if (!isRegister) return leoply(baby.only.usrReg)
+case 'fondopantalla':
+case 'fondo':
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             reply('*Deja busco un fondo de pantalla para ti, perate :D*')
               res = LeoGgImg(`fondos de pantalla 4k ${q}`, google)
@@ -2988,7 +2995,7 @@ case 'welcome':
 case 'bv':
 case 'bienvenidas':
 case 'bienvenida':
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   if (isBan) return leoply  (baby.only.benned)	
   if (!isGroup) return leoply(baby.only.group)
   if (!isAdmin) return leoply(baby.only.admin)
@@ -3009,7 +3016,7 @@ case 'bienvenida':
   break
 
 case 'antifake':
-  if (!isRegister) return leoply(baby.only.usrReg)
+  //if (!isRegister) return leoply(baby.only.usrReg)
   if (isBan) return leoply  (baby.only.benned)	
   if (!isWelkom) return reply('Activa la bienvenida antes para poder usar este comando')
   if (!isGroup) return leoply(baby.only.group)
@@ -3077,7 +3084,7 @@ case 'autosticker':
                     break
 */
 case 'grupo':
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             addFilter(from)
             if (!isGroup) return leoply(baby.only.group)
@@ -3113,7 +3120,7 @@ case 'newnombre':
             if (!isGroup) return leoply(baby.only.group)
             if (!isAdmin) return leoply(baby.only.admin)
             if (!botAdmin) return leoply (baby.only.Badmin)
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
                         var newName = args.join(" ")
             leo.groupUpdateSubject(from, newName).then(() => {
@@ -3122,7 +3129,7 @@ case 'newnombre':
             break
 case 'descripcion':
 case 'newdesc':        
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             addFilter(from)
             if (!isGroup) return leoply(baby.only.group)
@@ -3136,8 +3143,9 @@ case 'newdesc':
 
 //MENCION
 case 'hidetag':
+case 'enblanco':
     
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
             if (!isAdmin) return leoply(baby.only.admin)
@@ -3150,7 +3158,7 @@ case 'tagall':
 case 'listall':
 case 'alltag':
 case 'xd':
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
             if (!isAdmin) return leoply(baby.only.admin)    
@@ -3169,7 +3177,7 @@ case 'xd':
 case 'contador':  
  
             try{
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
             if (!isAdmin) return leoply(baby.only.admin)            
@@ -3194,7 +3202,7 @@ case 'contador':
             break
 ///𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐏𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐞𝐬
 case 'autokick':
-                if (!isRegister) return leoply(baby.only.usrReg)
+                //if (!isRegister) return leoply(baby.only.usrReg)
                 if (isBan) return leoply  (baby.only.benned)	
                 if (!isGroup) return leoply(baby.only.group)
                 if (!isAdmin) return leoply(baby.only.admin)
@@ -3208,7 +3216,7 @@ case 'autokick':
 case 'link':
 case 'enlace':
             if (isBan) return leoply  (baby.only.benned)	
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (!isGroup) return leoply(baby.only.group)
             if (!botAdmin) return leoply (baby.only.Badmin)
             addFilter(from)
@@ -3221,7 +3229,7 @@ case 'listadmin':
 case 'adminlist':
 case 'adminslist':
 case 'administradores':  
-            if (!isRegister) return leoply(baby.only.usrReg)
+            //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
             if (!isGroup) return leoply(baby.only.group)
             adm = `*${groupMetadata.subject}*\nTiene ${groupAdmins.length} Administradores.\n\n`
