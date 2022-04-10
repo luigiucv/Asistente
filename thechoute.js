@@ -70,8 +70,8 @@ const { reglas, logos } = require ('./lib/reglas')
 const {janza, janz, menuall, qmiembros, brillo, choute, cnal} = require ('./lib/baby.js')
 //const {bechoso} = require ('./lib/exportaciones/bechoso')
 const { vor } = require ('./lib/baby/vor')
-const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, BB, CC, DD, FF, GG, HH, II, JJ } = require ('./lib/baby/verdad')
-const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
+const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, BB, CC, DD, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO, PP, QQ, RR, SS, TT, UU, VV, WW, XX, YY, ZZ } = require ('./lib/baby/verdad')
+const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41, R42, R43, R44, R45, R46, R47, R48, R49, R50, R51, R52, R53, R54, R55, R56, R57, R58, R59, R60, R61, R62, R63, R64, R65, R66, R67, R68, R69, R70 } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 //const { linkgp } = require ('./lib/exportaciones/linkgp')
 const {grupos, admin, multimedia, owener, entrete, menual, menusticker} = require ('./lib/menus/menu');
@@ -412,7 +412,8 @@ leo.on('chat-update', async(choute) => {
           }
         }
       }
-      leo.sendMessage(id, {name: "𝕭𝖔𝖙-𝕷𝖚𝖈𝖍𝖎𝖙𝖔 𝕺𝕱𝕮", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)}
+      leo.sendMessage(id, {name: "𝕭𝖔𝖙-𝕷𝖚𝖈𝖍𝖎𝖙𝖔 𝕺𝕱𝕮", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)
+    }
  
       const isUrl = (url) => {return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))}
 
@@ -1184,7 +1185,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`verdad`)){
   if (isBan) return leoply  (baby.only.benned)
   //if (!isRegister) return leoply(baby.only.usrReg)
-  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`]
+  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`,`${AA}`,`${BB}`,`${CC}`, `${DD}`,`${EE}`,`${FF}`,`${GG}`,`${HH}`,`${II}`,`${JJ}`,`${KK}`,`${LL}`,`${MM}`,`${NN}`,`${ÑÑ}`,`${OO}`,`${PP}`,`${QQ}`,`${RR}`,`${SS}`,`${TT}`,`${UU}`,`${VV}`,`${WW}`,`${XX}`,`${YY}`,`${ZZ}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
   addFilter(from)
@@ -1195,7 +1196,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`reto`)){
   if (isBan) return leoply  (baby.only.benned)
   //if (!isRegister) return leoply(baby.only.usrReg)
-  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`]
+  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`, `${R26}`, `${R27}`, `${R28}`, `${R29}`, `${R30}`, `${R31}`, `${R32}`, `${R33}`, `${R34}`, `${R35}`, `${R36}`, `${R37}`, `${R38}`, `${R39}`, `${R40}`, `${R41}`, `${R42}`, `${R43}`, `${R44}`, `${R45}`, `${R46}`, `${R47}`, `${R48}`, `${R49}`, `${R50}`, `${R51}`, `${R52}`, `${R53}`, `${R54}`, `${R55}`, `${R56}`, `${R57}`, `${R58}`, `${R59}`, `${R60}`, `${R61}`, `${R62}`, `${R63}`, `${R64}`, `${R65}`, `${R66}`, `${R67}`, `${R68}`, `${R69}`, `${R70}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
   addFilter(from)
@@ -1867,7 +1868,7 @@ case 'banear':
                 if (mentionUser.length !== 0){
                 for (let i = 0; i < mentionUser.length; i++){
                 addBanned(mentionUser[0], args[1], ban)}
-                (`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D1`, mentionUser, true)
+                (`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D`, mentionUser, true)
 
                 isbans =`@${mentionUser[0].split('@')[0]} Haz sido *_Baneado_* ya no puedes usar el bot`, mentionUser, true
                         buttons1 = [{buttonId:`owner`,buttonText:{displayText: 'Owner'},type:1},]
@@ -1879,9 +1880,9 @@ case 'banear':
                 headerType: 4}}
                 else if (isQuotedMsg) {if (quotedMsg.sender.match('51932069772')) return reply(`🤨`)
                 addBanned(quotedMsg.sender, args[1], ban)
-                mentions(`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D2`, mentionUser, true)}
+                mentions(`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D`, mentionUser, true)}
                 else if (!isNaN(args[1])) {addBanned(args[1] + '@s.whatsapp.net', args[2], ban)
-                mentions(`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D3`, mentionUser, true)}
+                mentions(`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D`, mentionUser, true)}
                 bane = leo.prepareMessageFromContent(from, {buttonsMessage}, {quoted: choute, contextInfo: {mentionedJid: [mentionUser]}})
                 leo.relayWAMessage(bane)
                 break
@@ -1993,6 +1994,7 @@ case 'desilenciar':
               break
 
 //JUEGOS | ENTRETENIMIENTO
+//--Luis
 case 'vor':
 case 'verdadoreto':
             //if (!isRegister) return leoply(baby.only.usrReg)
@@ -2000,16 +2002,18 @@ case 'verdadoreto':
             txtt =`*𝗩erdad* o *𝗥eto*\n👇Presiona sobre un botón 👇`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
                         {buttonId:`reto`,buttonText:{displayText: 'Reto'},type:1}]
-            //imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.png`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
+            imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.png`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/vor.png`)})).imageMessage
             buttonsMessage = {
             contentText: `${txtt}`,
-            footerText: '© Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬', //imageMessage: imageMsg,
+            footerText: '© Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬', imageMessage: imageMsg,
             buttons: buttons1,
-            headerType: 4}
+            headerType: 4
+          }
             prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute })
             leo.relayWAMessage(prep)
             break
 
+            
 case 'chiste':
             if (isBan) return leoply  (baby.only.benned)
             //if (!isRegister) return leoply(baby.only.usrReg)
