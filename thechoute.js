@@ -40,10 +40,10 @@ const emoji = new EmojiAPI()
 const { spawn, exec, execSync } = require("child_process");
 const moment = require("moment-timezone");
 const yts = require('yt-search')
-const LeoGg = require('google-it');
+//const LeoGg = require('google-it');
 const LeoGgImg = require('g-i-s');
 const hx = require('hxz-api');
-const Fb = require('fb-video-downloader');
+//const Fb = require('fb-video-downloader');
 const { removeBackgroundFromImageFile } = require('remove.bg'); 
 
 const {convertSticker} = require("./lib/swm.js")
@@ -2207,7 +2207,7 @@ _*El archivo se esta enviando.*_
                 addFilter(from)
                 addLevelingLevel(sender, 5)
                 break
-
+/*
 case 'fb':
             if (!q) return reply('y el link?')
             if (!isUrl(args[0]) && !args[0].includes('facebook.com')) return reply(baby.Iv)
@@ -2223,7 +2223,7 @@ case 'fb':
             reply('intentalo nuevamente');
             })})
             break
-
+*/
 //Letra de canciones
 case 'lirik':
 case 'lyrics':
