@@ -1997,13 +1997,13 @@ case 'vor':
 case 'verdadoreto':
             //if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)
-            txtt =`*𝗩erdad* o *𝗥eto*\nPresiona sobre un botón`
+            txtt =`*𝗩erdad* o *𝗥eto*\n👇Presiona sobre un botón 👇`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
                         {buttonId:`reto`,buttonText:{displayText: 'Reto'},type:1}]
-            imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.png`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
+            //imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.png`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
             buttonsMessage = {
             contentText: `${txtt}`,
-            footerText: '© Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬', imageMessage: imageMsg,
+            footerText: '© Creador: 𝔏𝔲𝔠𝔥𝔦𝔱𝔬', //imageMessage: imageMsg,
             buttons: buttons1,
             headerType: 4}
             prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute })
