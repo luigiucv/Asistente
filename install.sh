@@ -1,11 +1,6 @@
 #!/usr/bin/bash
 echo -e '\e[1;32m
-▀█▀ █▀▀▄ █▀▀ ▀▀█▀▀ █▀▀█ █── █▀▀█ █▀▀▄ █▀▀▄ █▀▀█ 　 ░█▀▄▀█ █▀▀█ █▀▀▄ █──█ █── █▀▀█ █▀▀ 
-░█─ █──█ ▀▀█ ──█── █▄▄█ █── █▄▄█ █──█ █──█ █──█ 　 ░█░█░█ █──█ █──█ █──█ █── █──█ ▀▀█ 
-▄█▄ ▀──▀ ▀▀▀ ──▀── ▀──▀ ▀▀▀ ▀──▀ ▀──▀ ▀▀▀─ ▀▀▀▀ 　 ░█──░█ ▀▀▀▀ ▀▀▀─ ─▀▀▀ ▀▀▀ ▀▀▀▀ ▀▀▀ 
-░█▄─░█ █▀▀ █▀▀ █▀▀ █▀▀ █▀▀█ █▀▀█ ─▀─ █▀▀█ █▀▀ 
-░█░█░█ █▀▀ █── █▀▀ ▀▀█ █▄▄█ █▄▄▀ ▀█▀ █──█ ▀▀█ 
-░█──▀█ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀──▀ ▀─▀▀ ▀▀▀ ▀▀▀▀ ▀▀▀'
+Iniciando el proceso...'
 
 apt-get update
 apt-get upgrade
@@ -34,7 +29,7 @@ npm i @adiwajshing/baileys -y
 npm i performance-now -y
 npm i form-data -y
 npm i yt-search -y
-npm i google-it@1.6.1 -y
+#!npm i google-it@1.6.1 -y
 npm i g-i-s -y
 npm i hxz-api -y
 npm i cheerio -y
@@ -42,7 +37,7 @@ npm i qrcode -y
 npm i @adiwajshing/baileys
 npm i node-fetch
 npm i emoji-api
-npm i fb-video-downloader
+#!npm i fb-video-downloader
 
 
 echo -e '\e[1;32m
