@@ -34,7 +34,7 @@ npm i g-i-s -y
 #!npm i hxz-api -y
 npm i cheerio -y
 npm i qrcode -y
-#!npm i @adiwajshing/baileys
+npm i @adiwajshing/baileys
 npm i node-fetch
 npm i emoji-api
 #!npm i fb-video-downloader
