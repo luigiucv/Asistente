@@ -3082,7 +3082,7 @@ case 'antilinkwsp':
   reply('Antilink Activado Exitosamente')
   await wa.hideTag(from, `El *antilink* ha sido *activado*, todo miembro que *envie un link de grupos de wsp* o enlace de telegram *será eliminado del grupo*`, text)} 
   else if ((args[0]) === 'off') { 
-  if (!isAntiLink) return reply('El antilink ha sido desactivado exitosamente del grupo.')
+  if (!isAntiLink) return reply('El *antilink* ha sido *desactivado* exitosamente del grupo.')
   var ini = antilink.indexOf(from)
   antilink.splice(ini, 1)
   fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
