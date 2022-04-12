@@ -37,7 +37,7 @@ npm i qrcode -y
 npm i @adiwajshing/baileys
 npm i node-fetch
 npm i emoji-api
-npm i fb-video-downloader
+#!npm i fb-video-downloader
 
 
 echo -e '\e[1;32m
