@@ -251,15 +251,15 @@ leo.sendMessage(from,
   else if (anu.action == 'promote') {
     num = anu.participants[0]
     try { ppimg = await leo.getProfilePicture(`${num.split('@')[0]}@c.us`)
-    } catch {ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+    } catch {ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
     }
     thu = await leo.getStatus(anu.participants[0], MessageType.text)
     teks = 
-  `👑 *NUEVO ADMIN* 👑
-  👤 *Nombre:* @${num.split('@')[0]}
-  📋 *INFO:* ${thu.status}
-  🌎 *Grupo:* ${mdata.subject}
-  *Felicitaciones eres uno/a de los/as administradores/as.*`
+`👑 *NUEVO ADMIN* 👑
+👤 *Nombre:* @${num.split('@')[0]}
+📋 *INFO:* ${thu.status}
+🌎 *Grupo:* ${mdata.subject}
+*Felicitaciones eres uno/a de los/as administradores/as.*`
    let buff = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
     } else if (anu.action == 'demote') {
@@ -267,16 +267,16 @@ leo.sendMessage(from,
     try {
     ppimg = await leo.getProfilePicture(`${num.split('@')[0]}@c.us`)
     } catch {
-    ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+    ppimg = 'https://i.ibb.co/4Zy1f39/1813751.png'
     }
     thu = await leo.getStatus(anu.participants[0], MessageType.text)
     teks = 
-  `❌ *ADMIN MENOS* ❌
-  👤 *Nombre:* @${num.split('@')[0]}
-  📋 *INFO:* ${thu.status}
-  🌎 *Grupo:* ${mdata.subject} 
-  *Ya no eres admin.*`
-    let buff = await getBuffer(ppimg)
+`❌ *ADMIN MENOS* ❌
+👤 *Nombre:* @${num.split('@')[0]}
+📋 *INFO:* ${thu.status}
+🌎 *Grupo:* ${mdata.subject} 
+*Ya no eres admin 😜*`
+  let buff = await getBuffer(ppimg)
   leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
   
     }
@@ -1368,7 +1368,7 @@ if (!isOwner) if (isAntiPv) if (!isGroup) {
   }
 
 if (body.includes(`@${botNumber}`)){
-  leo.sendMessage(from, fs.readFileSync('./sticker/moni.webp'), sticker, {quoted: choute})
+  leo.sendMessage(from, fs.readFileSync('./media/sticker/moni.webp'), sticker, {quoted: choute})
   }
 
   async function extraPlay(cArgs) {
@@ -1676,7 +1676,6 @@ teks =
 ☎️ *Número* : ${sender.split("@")[0]}
 🌐 *Link* : wa.me/${sender.split("@")[0]}
 🗣️ *Tipo de Usuario* : ${tipoDeUsr}
-⚙️ *Nivel* : ${getLevel1}
 🎖️ *Rango* : ${rango}
 📋 *INFO:* ${tu.status}`
   its = await getBuffer (ppimg)
@@ -2189,20 +2188,20 @@ reply(`Espere un momento, su audio ${q} se esta descargando...`)
 teks = args.join(' ')
 if (!teks.endsWith("-doc")){
 res1 = await yts(q).catch(e => {
-reply('*NO HE ENCONTRADO LO QUE BUSCABAS*')
+reply('*Lo siento, no he encontrado lo que buscas 😟*')
 })
-let thumbInfo = ` [ *${res1.all[0].title}* ]
-*Subido* ${res1.all[0].ago}
-*Vistas :* ${res1.all[0].views}
+let thumbInfo = `[ *${res1.all[0].title}* ]
+*Subido   :* ${res1.all[0].ago}
+*Vistas   :* ${res1.all[0].views}
 *Duracion :* ${res1.all[0].timestamp}
-*Canal :* ${res1.all[0].author.name}
+*Canal    :* ${res1.all[0].author.name}
 *°Link del Canal :* ${res1.all[0].author.url}
-*Elaudio se esta enviando*
-No hagas spam del comando_`
+*El audio se está enviando 🎵💃🕺*
+_*No* hagas *spam* del comando play_`
 sendFileFromUrl(res1.all[0].image, image, {quoted: choute, sendEphemeral: true, caption: thumbInfo, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
 res1 = await y2mateA(res1.all[0].url).catch(e => {
 pr21 = getJson(`https://api.zeks.xyz/api/ytmp3?apikey=hamilton20&url=${res1.all[0].url}`)
-reply(`_*[ ! ]* Lo siento, su descarga no pudo ser completada_\n\n*Realizando busqueda en el servidor 2*`)
+reply(`_*[ ! ]* Lo siento, su descarga no pudo ser completada_\n*`)
 sendFileFromUrl(pr21.result.url_audio, audio, {quoted: choute, mimetype: 'audio/mp4', filename: res1[0].output})
 })
 sendFileFromUrl(res1[0].link, audio, {quoted: choute, mimetype: 'audio/mp4', filename: res1[0].output})}
@@ -2218,7 +2217,7 @@ case 'ytmp4':
                 teks = args.join(' ')
                 reply(baby.wait)
                 resyv = await y2mateV(teks).catch(e => {
-                reply('_ERROR :D, intentalo _')
+                reply('_ERROR :D, intentalo luego_')
                 })
                 result = `「  ${yo} 」
 *°Titulo :* ${resyv[0].judul}
