@@ -2196,12 +2196,12 @@ let thumbInfo = `[ *${res1.all[0].title}* ]
 *Duracion :* ${res1.all[0].timestamp}
 *Canal    :* ${res1.all[0].author.name}
 *°Link del Canal :* ${res1.all[0].author.url}
-*El audio se está enviando 🎵💃🕺*
-_*No* hagas *spam* del comando play_`
+*El audio se está enviando🎵*
+_*No* hagas *spam* del comando_`
 sendFileFromUrl(res1.all[0].image, image, {quoted: choute, sendEphemeral: true, caption: thumbInfo, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
 res1 = await y2mateA(res1.all[0].url).catch(e => {
 pr21 = getJson(`https://api.zeks.xyz/api/ytmp3?apikey=hamilton20&url=${res1.all[0].url}`)
-reply(`_*[ ! ]* Lo siento, su descarga no pudo ser completada_\n*`)
+reply(`_*[ ! ]*Lo siento, su descarga no pudo ser completada\n*`)
 sendFileFromUrl(pr21.result.url_audio, audio, {quoted: choute, mimetype: 'audio/mp4', filename: res1[0].output})
 })
 sendFileFromUrl(res1[0].link, audio, {quoted: choute, mimetype: 'audio/mp4', filename: res1[0].output})}
